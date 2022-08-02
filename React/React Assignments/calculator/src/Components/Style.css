@@ -1,0 +1,36 @@
+
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    overflow-x:none ;
+    box-sizing: border-box;
+}
+.box{
+    height: 100%;
+    width: 360px;
+    margin: 20px auto;
+    background-color: #000000;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+.but, .but1{
+    margin:10px;
+    font-size:20px;
+    width:55px;
+    height:55px;
+    border-radius: 10px;
+}
+.but{
+    background-color: #ffffff;
+    color:#000000;
+}
+.but1{
+    background-color: #ffa600;
+    color:#000000;
+}
+input,.clear{
+    outline:none;
+    border-radius: 10px;
+}
