@@ -1,0 +1,107 @@
+body{
+	background-color:blue;
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+	}
+.clearfix{
+	clear:both;
+}
+div.card{
+	background-color:white;
+	margin:50px auto;
+	height:auto; /*550px*/	
+	width:350px;
+}
+.card1{
+	padding:10px 10px 50px 10px;
+}
+.card .titleadidas {
+	padding-top:0px;
+	margin-left:13px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.card .titleadidas h2{
+	float:left;
+	margin-top:4px;
+	margin-bottom:0px;
+}
+.card .titleadidas h3{
+	margin-top:6px;
+	float:right;
+	color:blue;
+	padding-right:20px;
+	padding-top:0px;
+}
+.card .caption p{
+	color:#8c91ad;
+	padding:0;
+	margin:0 0 0 13px;
+}	
+.card .tshirtsize{
+	margin-left:20px;
+}
+.card .tshirtsize h4{
+	margin:2px 0;
+}
+.card .tshirtsize button.size,
+.card .tshirtsize button.size1{
+		border-radius:35px;
+		height:25px;
+		width:25px;
+		padding:0;	
+		border:none;
+}
+.card button.size{
+	color:blue;
+	background-color:transparent;
+}
+.card button.size1{
+	color:white;
+	background-color:blue;
+}
+.card .color{
+	margin:2px 0 2px 20px;
+}
+.card .color h4{
+	margin:2px 0;
+}
+.card div.color button.color1,button.color2,button.color3{
+	border-radius:30px;
+	height:20px;
+	width:20px;
+	border:none;
+}
+.card .color button.color1{
+	background-color:#878787;
+}
+.card .color button.color2{
+	background-color:blue;
+	border:double;
+	height:27px;
+	width:27px;
+	border-color:white;
+	border-width:4px;
+}
+.card .color button.color3{
+	background-color:#ffd903;
+}
+.card .submit{
+	text-align:center;
+}
+.card .submit button.buy{
+	background-color:blue;
+	color:white;
+	border-color:transparent;
+	padding :7px 30px;
+}
+.card .submit button.add{
+	background-color:white;
+	color:black;
+	border-color:black;
+	padding :7px 20px;	
+	margin-left:25px;
+}
+	

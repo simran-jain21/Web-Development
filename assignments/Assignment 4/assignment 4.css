@@ -1,0 +1,348 @@
+body{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	overflow-x:hidden;
+}
+
+.clear-fix{
+	clear:both;
+}
+
+div.fullcard{
+	font-family:calibri;
+}
+
+
+nav.navbar{
+	background-color:#fff;
+	height:50px;
+	/* font-family:sans-serif; */
+}
+nav.navbar .L-navigation-bar{
+	padding-left:70px;
+	float:left;
+}
+nav.navbar .R-navigation-bar{
+	padding-right:70px;
+	float:right;
+}
+nav.navbar .L-navigation-bar p.soft{
+	font-size:20px;
+	font-weight:bolder;
+	margin-top:12px;
+}
+nav.navbar .R-navigation-bar ul li{
+	float:left;
+	list-style-type:none;
+	padding-left:18px;
+	font-size:15px;
+}
+nav.navbar .R-navigation-bar ul li a{
+	text-decoration:none;
+	color:black;
+}
+nav.navbar .R-navigation-bar ul li p{
+	padding-top:0;
+	margin:0;
+}
+
+
+div.card2{
+	text-align:center;
+	background-image:url('./pictures/assignment4 card2.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:70px;
+	color:white;
+	/* font-family:sans-serif; */
+}
+div.card2 p{
+	margin:auto;
+	height:auto;
+	width:400px;
+	font-size:15px;
+	opacity:0.85;
+}
+
+div.card3{
+	/* width:100%; */                     /*width:1005 -> scroll bar is coming*/
+	height:300px;                        /*height:auto -> not working as below contents are coming up*/
+	text-align:center;
+	padding:50px 70px 0 70px;					
+}
+div.card3 h2{
+	color:#2788FF;
+}
+div.card3 p.common{
+	text-align:justify;
+}
+i.fa-comment,
+i.fa-code,
+i.fa-object-group,
+i.fa-chart-line{
+	font-size:30px;
+	background-color:#2788FF;
+	color:#fff;
+	border-radius:50%;
+	height:41px;
+	width:55px;
+	/* text-align:center; */
+	padding-top:10px;
+}
+div.card3 .consulting,
+div.card3 .developing,
+div.card3 .designing,
+div.card3 .analysis{
+	width:22%;
+	padding:15px;
+	float:left;	
+	/* font-family:sans-serif; */
+}
+
+div.card4{
+	width:100%;
+	background-color:#ebebeb;
+	height:370px;
+    margin:20px 0 0 0;
+}
+div.card4-1{
+	width:50%;
+}
+div.card4-1 .lorem{
+	width:70%;
+	height:auto;
+	margin-left:70px;
+	text-align:justify;
+	float:left;
+}
+div.card4-1 .lorem button.view{
+	background-color:white;
+	padding:10px 60px;
+	border:none;
+	font-weight:bold;
+}
+div.card4 .laptop-img{
+	width:50%;
+	float:right;
+	text-align:center;
+	margin:30px 0;
+}
+
+
+div.card5{
+	/* width:56%; */
+	height:400px;				/*height auto not working as it wont show background-color*/
+	background-color:#ebebeb;
+	/* padding:20px 50px; */
+}
+div.card5 .news img,
+div.card5 .elite img
+{
+	height:290px;
+	width:309px;
+}
+div.card5 .libro img{
+	height:290px;
+	width:459px;
+}
+div.card5 .news{
+	margin-left:70px;
+}
+div.card5 .news,.libro,.elite{
+	float:left;
+	padding:0;
+}
+
+
+div.card6{
+	padding:30px 70px;
+	height:400px;
+	background-color:#f5f5f5;
+}
+div.card6 h4{
+	color:#2788FF;
+}
+div.card6 h4{
+	padding:0 10px;
+	margin-bottom:5px;
+}
+div.card6 p.content{
+		padding:0 10px 20px 10px;
+		margin-top:8px;
+}
+div.card6 hr{
+	width:70px;
+	height:5px;
+	background-color:white;
+	text-align:left;
+	margin:0 0 20px 20px;   
+	border:none;
+}
+div.card6 .latest,
+div.card6 .release,
+div.card6 .jobs{
+	width:32.5%;
+	height:auto;
+	float:left;
+}
+div.card6 .main-latest .latest1{
+	width:14%;
+	float:left;
+}
+div.card6 .main-latest .latest2{
+	width:18%;
+	float:right;
+	padding-right:20px;
+}
+
+div.card6 .latest .lorem1,
+div.card6 .release .cons,
+div.card6 .jobs .vesti
+{
+	text-align:justify;
+	background-color:white;
+	/* padding:20px 10px; */
+	margin:0 20px;
+}
+div.card6 .latest h3,
+div.card6 .release h3,
+div.card6 .jobs h3{
+	width:133px;
+	padding-left:20px;
+	font-family:sans-serif;
+}
+div.card6 p.desc1{
+	float: right;
+    font-size: 11px;
+    margin-top: -61px;
+    padding-right: 109px;
+    width: 64px;
+}
+div.card6 p.desc2{
+	float: right;
+    font-size: 11px;
+    margin-top: -62px;
+    padding-right: 147px;
+}
+
+                                                                                                                                               
+@media only screen and (max-width: 480px){
+	div.card2{
+		margin:0;
+		padding:0;
+		padding:10px;
+	}
+	div.card2 h1{
+		font-size:14px;
+		box-sizing: border-box;
+	}
+	div.card2 p{
+		font-size:7.5px;
+		width:40%;
+	}
+	div.card3{
+		padding:10px;
+		display:flex;
+		flex-direction: column;
+		display:grid;
+		place-items:center;
+		height:1150px;
+	}
+	div.card3 .consulting,
+	div.card3 .developing,
+	div.card3 .designing,
+	div.card3 .analysis{
+		width:70%;
+	}
+	div.card4{
+		display: flex;
+		flex-direction: column;
+		padding:0;
+		margin:0;
+		height:560px;
+	}
+	div.card4-1{
+		width:100%;
+		display:grid;
+		place-items: center;
+		margin:0;
+		padding:0;
+	}
+	div.card4-1 .lorem h1{
+		font-size:18px;
+	}
+	div.card4-1 .lorem{
+		margin:0;
+	}
+	div.card4-1 .lorem .common{
+		font-size:13px;
+		width:100%;
+	}
+	div.card4-1 .lorem button.view{
+		font-size:13px;
+		width:100%;
+	}
+	div.card5{
+		display:grid;
+		place-items:center;
+		height:770px;
+	}
+	div.card5 .news,.libro,.elite{
+		margin:0px 0px -23px 0;
+	}
+	div.card5 .news img,
+	div.card5 .elite img,
+	div.card5 .libro img
+	{
+		height:250px;
+		width:259px;
+	}
+	div.card6{
+		display:flex;
+		flex-direction: column;
+		position: relative;
+		width:100%;
+		padding: 30px 0;
+		height:auto;
+	}
+	div.card6 .latest1 h3.text,
+	div.card6 .release h3.text,
+	div.card6 .jobs h3.text{
+		font-size:12px;
+		margin:0;
+		padding:10px;
+	}
+	div.card6 p.desc1,p.desc2{
+		position: absolute;
+		left:180px;
+		font-size:10px;
+	}
+	div.card6 p.desc1{
+		position: absolute;
+		top:100px;
+	}
+	div.card6 p.desc2{
+		margin-top:-50px;
+	}
+	div.card6 .latest, 
+	div.card6 .release, 
+	div.card6 .jobs {
+		width:100%;
+	}
+	div.card6 .latest1 h3.text,
+	div.card6 .release h3.text,
+	div.card6 .jobs h3.text
+	{
+		margin-left:10px;
+	}
+	div.card6 hr{
+		width:90%;
+	}
+	div.card6 .content{
+		font-size:13px;
+	}
+}
+
