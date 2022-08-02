@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 5 - Number Methods</title>
+</head>
+    <body>
+
+        
+
+
+        <script>
+            var a = '354';
+            console.log(a);
+            console.log(typeof a);
+
+            // Number
+            a = Number(a);
+            console.log(typeof a);
+
+            console.log('23 = ',Number('23'));
+            console.log('hello = ',Number('hello'));
+            console.log('true = ',Number(true));
+            console.log('null = ',Number(null));
+
+            //toString()
+
+            var a = 345;
+            var x = a.toString(2);
+            console.log(typeof a);
+            console.log( x);
+
+
+            //toExponential()
+            var a = 34987;
+            console.log(a.toExponential())
+            console.log(a.toExponential(2))
+
+            //toFixed
+
+            var a = 5.974242;
+            var x = 5;
+            console.log(a.toFixed())
+            console.log(a.toFixed(3));
+            console.log(x.toFixed(2))
+            
+            //toPrecision
+            var a = 5.974242;
+            var x = 15.9;
+            console.log(a.toPrecision())
+            console.log(a.toPrecision(3));
+            console.log(x.toPrecision(2))
+
+            //valueOf
+
+            var a = new Number(354);
+            var x = 354;
+            console.log(a);
+            console.log(typeof a);
+            console.log(x+4)
+            console.log(a+4)
+            console.log(typeof a.valueOf())
+            console.log(x === a.valueOf())
+
+            //parseInt
+            console.log(Number.parseInt("13"))
+            console.log(Number.parseInt(10.50))
+            console.log(Number.parseInt("10.33"))
+            console.log(Number.parseInt("34 456 546"))
+            console.log(Number.parseInt(" 65 "))
+            console.log(Number.parseInt("30 years "))
+            console.log(Number.parseInt("Hello world"))
+
+             //parseFloat
+             console.log(Number.parseFloat("13"))
+            console.log(Number.parseFloat(10.70))
+            console.log(Number.parseFloat("10.33"))
+            console.log(Number.parseFloat("34 456 546"))
+            console.log(Number.parseFloat(" 65 "))
+            console.log(Number.parseFloat("30 years "))
+            console.log(Number.parseFloat("Hello world"))
+
+            //isFinite
+
+            var a = 4/2;
+            var x = 22/7;
+            var y = 2342/0;
+            console.log(Number.isFinite(a));
+            console.log(Number.isFinite(x));
+            console.log(Number.isFinite(y));
+
+            //isNaN
+            console.log(Number.isNaN(34))
+            console.log(Number.isNaN('hello'))
+            console.log(Number.isNaN('3453'/4));
+            console.log(Number.isNaN(Number('king')))
+
+            //Number Properties
+            console.log(Number.MAX_VALUE);
+            console.log(Number.MIN_VALUE);
+            console.log(Number.NEGATIVE_INFINITY)
+            console.log(Number.POSITIVE_INFINITY)
+
+
+
+
+            
+
+
+            
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES6 - DAY2</title>
+</head>
+<body>
+
+
+
+  <script>
+    var obj = {'name':'Shilwant','email':'shilwant@gmail.com',myfun:function(){
+      return 'object function'
+    }}
+
+    obj.lastname = 'Gupta'
+console.log(obj);
+
+console.log('call object function -- ',obj.myfun())
+
+
+      var arr = [2,4,5, function(){
+        return 'Array function';
+      }]
+      console.log(arr);
+console.log('call array function -- ', arr[3]());
+
+
+    // Map
+
+    var map = new Map();
+
+    console.log(map);
+    var data1 = {name:'shilwant'};
+    var data2 = 'name';
+    var data3 = [];
+
+    map.set(data1,{lastname:'Gupta'});
+    map.set(data2,'This is string');
+    map.set(data3,'This is an array');
+
+    console.log(map);
+    console.log(map.keys())
+
+    console.log(map.values())
+    console.log(map.size)
+    // map.delete(data1)
+    console.log(map.has(data2))
+    // map.clear();
+    console.log(map);
+
+
+    // Set
+
+    var set = new Set([4,5,3,4]);
+    console.log(set);
+
+    var arr = [4,34,3534,53,53,53,534,5,435,3454,3543,543,543,5]
+
+    set.forEach(function(val){
+      console.log(val);
+    })
+
+    var obj1 = {
+      name:'JavaScript',
+      email:'JavaScript@gmail.com',
+      contact:'0000000',
+      address:'USA',
+      madeby:'Simran',
+      date:{
+        createat:'01-01-1970',
+        updatedat:'13-05-2022'
+      }
+    }
+    // var name = obj1.name;
+    // var email = obj1.email;
+    // var contact = obj1.contact;
+    // var address = obj1.address;
+    // var madeby = obj1.madeby;
+
+    //object destructure 
+    var {name,contact,address,email,date:{createat,updatedat}} = obj1;
+
+    console.log(obj1)
+
+    console.log(name,contact,address,email,createat,updatedat);
+
+    //array destructure
+
+    var arr = [2,34,242,4,23432,[211111,411111],4,5];
+    
+    var a = arr[0]
+    var [a,b,c ,d,e,[g,h],...arr1] = arr;
+
+    
+    console.log(arr);
+    console.log(a,b,d,e,g,h,arr1);
+
+
+
+
+    var a = 4;
+    var b = 5;
+
+    console.log(a,b);
+
+    var [b,a] = [a,b];
+
+    console.log(b,a);
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

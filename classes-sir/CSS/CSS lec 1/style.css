@@ -1,0 +1,34 @@
+/* div{
+    font-size: 50px!important;
+} */
+.html-div{
+  
+    background: red;
+    width: 300px;
+    /* height: 500px; */
+    height: 100vh;
+    /* overflow: scroll; */
+    
+    background-color: #000;
+    color:#ffffff;
+
+}
+.html-div p{
+    font-size: 1rem;
+    text-decoration:dotted;
+}
+div.css-div{
+color:aqua;
+font-size: 30px;
+}
+
+input{
+    background-color: red;
+}
+input[type="text"]{
+    background-color: blue;
+}
+
+.div-box{
+    font-size: 20px;
+}

@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00b7ff;
+}
+div{
+    background-color: transparent;
+}
+.box{
+    background-color: burlywood;
+}
+#box1{
+    color:white!important;
+}
+
+.box{
+    height: 100px;
+    width: 300px;
+    overflow: scroll;
+    border:2px solid red;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: yellow;
+
+}
+.border-class{
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    border-top: 2px solid red;
+    border-top-width: 4px;
+    border-right: 3px solid red;
+    border-bottom: 2px double red;
+    border-left: 2px dotted;
+    border-left-color: red;
+    
+}
+.border-class1{
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    border-color: red;
+    border-style: solid;
+    border-width:4px 10px 15px 2px;
+    border-color: red blue green yellow ;
+    border-style: solid groove dotted double;
+}
+.abc{
+    border:groove 4px white;
+    padding:20px;
+    padding:20px 10px 30px 40px;
+    padding-bottom: 100px;
+
+    margin:30px;
+    margin:20px 10px 30px 40px;
+}
+button.clickBtn{
+    height: 40px;
+    width: 100px;
+    /* border:inset 10px  red; */
+    /* border:outset 10px  red; */
+    border:solid 4px  red;
+    border-radius: 100px;
+    /* border-radius: 30px 20px 30px 40px; */
+    /* border-top-left-radius: 100px; */
+
+}
+.btn-radius{
+    border:2px solid red;
+    border-radius: 100px;
+}
+
+.card{
+    width: 400px;
+    height: 300px;
+    border:2px solid red;
+    padding:10px;
+
+}
+.card p{
+    text-align: justify;
+    margin-left: 20px;
+}
+.card .social{
+    height: 30px;
+    width: 30px;
+    border:2px solid red;
+    border-radius: 100px;
+}
+.card .more{
+    border:1px solid green;
+    border-radius: 100px;
+
+}
+.card .btn{
+    border:2px solid blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

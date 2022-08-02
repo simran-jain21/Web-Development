@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DAY 4- Array Method</title>
+</head>
+
+
+<body>
+    <script>
+        console.log('This is \'paragraph\' ');
+        console.log('This is second \\ paragraph');
+        console.log('This is third \n paragraph');
+        console.log('This is fou\trth prag\vraph');
+        document.write('<h1> Hello &nbsp;&nbsp; World</h1>');
+        var arr = ['string', 342, {
+            name: 'Shilwant',
+            email: 'shilwant@gmail.com'
+        }, true];
+        console.log(typeof arr);
+        console.log(arr);
+        var arr1 = new Array('string', 345, false);
+        console.log(typeof arr1);
+        console.log(arr1) 
+        // length - syntax - arr.length
+        console.log('length= ',arr.length);
+        // multidimentional arrayvar mArr = [[1,2,3],[4,5,2],[4,35,56]];
+        console.log(mArr);
+        //Array.isArray - syntax - Array.isArray(arr)
+        var a = 5345243;
+        console.log(Array.isArray(mArr));
+        console.log(Array.isArray(a))
+        //toString() - syntax - arr.toString()
+        var arr1 = ['string',345,false];
+        console.log(arr1);
+        var x = arr1.toString();
+        console.log(x);
+        console.log(typeof x);
+        //join() - syntax - arr.join()
+        var nArr = ['apple','mango','pineapple','watermelon'];
+        console.log(nArr.join(' '));
+        console.log(nArr.join(' king '));
+        //pop() - syntax - arr.pop();
+        var nArr = ['apple','mango','pineapple','watermelon'];
+        console.log(nArr);
+        console.log(nArr.pop());
+        console.log(nArr);
+        console.log(nArr.pop('mango'));
+        console.log(nArr);
+        // push() - syntax - arr.push(value1,value2,....,valueN);
+        var pArr = ['apple','mango','pineapple','watermelon'];
+        pArr.push('hello');
+        console.log(pArr);
+        pArr.push([3,4,5]);
+        console.log(pArr);
+        pArr.push(true,3422,'king');
+        console.log(pArr);
+        //unshift() - syntax - arr.unshift(value1,value2, ...., valueN)
+        var uArr = ['apple','mango','pineapple','watermelon'];
+        console.log(uArr);
+        uArr.unshift('world','hello');console.log(uArr);
+        //shift() - syntax - arr.shift()
+        var uArr = ['apple','mango',[1,3,4],'pineapple','watermelon'];
+        console.log(uArr);uArr.shift();console.log(uArr);
+        //access value from arr
+        var aArr = ['apple','mango',[1,3,4],'pineapple','watermelon'];
+        console.log(aArr);console.log(aArr[2][1],' , ',aArr[3])
+        //delete - syntax - delete arr[index];
+        var dArr = ['apple','mango',[1,3,4],'pineapple','watermelon'];
+        console.log(dArr);
+        delete dArr[2];
+        console.log(dArr);
+        //splice - syntax - arr.splice(start,deleteCount,value1,value2....,valueN) // deleteCount & values-optional
+        var sArr = ['apple','mango',[1,3,4],'pineapple','watermelon'];
+        sArr.splice(2,0,'hello','dfjslj','ksjfdlsj');
+        console.log(sArr);
+
+        //slice - syntax - arr.slice(start,end)
+        var sArr = ['apple', 'mango', [1, 3, 4], 'pineapple', 'watermelon'];
+        console.log(sArr);
+        nArr = sArr.slice(1, 3);
+        console.log(nArr);
+
+        //sort - syntax - arr.sort()
+        var sArr = ['pineapple', 'watermelon', 'apple', 'mango'];
+        console.log(sArr);
+        sArr.sort();
+        console.log(sArr);
+
+        //reverse - syntax - arr.reverse()
+        var sArr = ['pineapple', 'watermelon', 'apple', 'mango'];
+        console.log(sArr);
+        sArr.sort().reverse();
+        console.log(sArr);
+
+
+
+        //String
+
+        var a = '      hello world    ';
+        console.log(a);
+        console.log(a.trim());
+
+        var x = 3453453;
+        console.log(typeof x);
+
+        var b = String(x);
+        console.log(typeof b)
+    </script>
+
+</body>
+
+</html>

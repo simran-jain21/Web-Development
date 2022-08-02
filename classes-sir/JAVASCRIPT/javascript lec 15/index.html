@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content-box{
+            height: 200px;
+            width: 200px;
+            border:1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="content card block" id="box" >
+        Hello JavaScript
+    </div>
+    <input type="text" disabled id="input">
+    <button id="btn">enable input</button>
+    <div class="content-box" id="bgBox">
+
+    </div>
+    <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" height="100" width="100" id="img" alt="">
+    <a href="http://www.shilwantgupta.com" id="link">Shilwant Gupta</a>
+    <script>
+
+        // Get/Set Attributes
+        var box = document.getElementById('box');
+        console.log(box.className.split(' '))
+        
+        console.log(box.getAttribute('title'))
+        console.log(box.hasAttribute('title'))
+
+        box.setAttribute('title','New title');
+
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(){
+            var input = document.getElementById('input')
+            input.removeAttribute('disabled')
+            console.log(input)
+            clearTimeout(time)
+            clearInterval(interval)
+        })
+        console.log(1)
+
+        var time = setTimeout(function(){
+            // console.log(2)
+        }, 5000);
+        console.log(3)
+
+        var interval = setInterval(function(){
+            console.log('Hello')
+        }, 1000);
+
+        box.style.backgroundColor = 'blue'
+        box.style.color = 'white'
+        // box.style.backgroundColor = ''
+
+        // Random background on hover
+        function rbgc(){
+            return Math.floor(Math.random() * 255)
+        }
+      var bgBox = document.getElementById('bgBox');
+      bgBox.addEventListener('mouseover',function(){
+        bgBox.style.background = 'rgb('+rbgc()+','+rbgc()+','+rbgc()+')'
+      })
+
+      //on mouse over change image
+      var img = document.getElementById('img')
+      img.addEventListener('mouseover',function(){
+          var imgurl = 'https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg'
+        //   img.setAttribute('src',imgurl)
+        img.src = imgurl
+
+      })
+
+      //read href of a tag
+      var a = document.getElementById('link');
+        a.addEventListener('mouseover',function(){
+        console.log(a.href)
+      })
+        
+        
+
+
+        
+    </script>
+</body>
+</html>

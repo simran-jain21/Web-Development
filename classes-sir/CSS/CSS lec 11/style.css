@@ -1,0 +1,53 @@
+.bg-color{
+    width: 300px;
+    height: 100px;
+    background: #000;
+    color:#fff;
+    /* background: linear-gradient(red ,blue ); */
+
+    background: linear-gradient(to right,red ,blue );
+
+
+
+}
+.bg-color1{
+    background: linear-gradient(to right,green 10% ,yellow 20%);
+    /* background: linear-gradient(270deg,green ,yellow ); */
+    /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));; */
+    background: radial-gradient(red, yellow, green);
+    background: radial-gradient(red 5%, yellow 15%, green 60%);
+    background: radial-gradient(circle, red, yellow, green);
+    background: conic-gradient(red, yellow, green);
+    background: conic-gradient(red, yellow, green, blue, black);
+
+}
+
+.text-shadow{
+    text-shadow: -4px 2px 4px red;
+}
+.bg-clip{
+    margin-top: 20px;
+    height: 100px;
+    width: 300px;
+    border:5px dotted #000;
+    background: mediumaquamarine;
+    padding: 20px;
+    background-clip: border-box;
+     /* transform: rotate(180deg); 
+    transform: rotate(
+281deg
+); 
+    transform: rotateX(
+186deg
+);
+    transform: rotateY(
+8deg
+);
+    transform: rotateZ(
+360deg
+); */
+
+
+transform: skew(183deg, 13deg);
+
+}

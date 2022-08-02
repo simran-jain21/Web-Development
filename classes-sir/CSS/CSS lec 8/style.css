@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+.main_div{
+    /* display: contents; */
+    /* min-height: 200px; */
+
+    /* height: 70vh; */
+    background-color: skyblue;
+    /* display: table; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+/* .main_div .child_2{
+    background-color: red;
+    display: contents;
+} */
+.main_div .child{
+    /* display: table-cell;
+    vertical-align: middle; */
+    padding: 20px;
+    text-align: center;
+
+}
+.main_div .child_1{
+    background-color: red;
+}
+.main_div .child_2{
+    background-color: blue;
+}
+.main_div .child_3{
+    color:#fff;
+    background-color: black;
+}

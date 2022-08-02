@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 8 - Conditions</title>
+</head>
+<body>
+    <script>
+        var a = 10, b=40, c= 80;
+        var max;
+        if(a > b){
+            if( a > c){
+                max = a;
+            }else{
+                max = c;
+            }
+        }else{
+            if(b > c){
+                max = b;
+            }else{
+                max  = c;
+            }
+        }
+        console.log('greatest value = '+max)
+
+        /*
+        if(condition){
+            //statement
+        }else if(condition){
+            //statement
+        }else if(condition){
+            //statement
+        }else{
+            //statement
+        }
+        */
+
+        function calculator(x,y,op){
+            var result;
+            if(op === '+'){
+                result = x + y;
+            }else if(op === '-'){
+                result = x - y;
+            }else if(op === '*'){
+                result = x * y;
+            }else if(op === '/'){
+                result = x / y;
+
+            }else if( op === '%'){
+                result  = x % y;
+            }else{
+                result = 'You did something wrong';
+            }
+
+            return result;
+        }
+        console.log(calculator(4,8,"+"))
+        console.log(calculator(4,2,"-"))
+        console.log(calculator(4,7,"/"))
+        console.log(calculator(9,2,"*"))
+
+
+        //==================== Task =====================
+        //=====Condition======
+        // 1. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result.
+        //Sample numbers : 0, -1, 4
+        //Output : 4, 0, -1
+
+        //=====MATH======
+        //2. Write a JavaScript function to generate a random integer. 
+        /* console.log(rand(20,1));
+            console.log(rand(1,10));
+            console.log(rand(6));
+            console.log(rand());
+            */
+
+        //3. Write a JavaScript function to find the highest value in an array.
+        /* Test Data :
+            console.log(max([12,34,56,1])); // 56
+            console.log(max([-12,-34,0,-56,-1])); //0
+            */
+
+        //4. Write a JavaScript function to find the lowest value in an array. 
+        /* Test Data :
+            console.log(min([12,34,56,1]));  //1
+            console.log(min([-12,-34,0,-56,-1])); //-56
+        */
+
+        //5. Write a JavaScript function to round a number to a given decimal places. 
+        /*
+            Test Data :
+            console.log(precise_round(12.375,2)); //12.38
+            console.log(precise_round(-10.3079499, 3)); // -10.308
+            console.log(precise_round(10.49999,0)); //10
+            console.log(precise_round(10.49999,2)); //10.50
+        */
+       //6. Write a JavaScript function to check to check whether a variable is numeric or not.
+       /*
+            Test Data :
+            console.log(is_Numeric(12)); //true
+            console.log(is_Numeric('abcd')); //false
+            console.log(is_Numeric('12')); //true
+            console.log(is_Numeric(' ')); // false
+            console.log(is_Numeric(1.20)); //true
+            console.log(is_Numeric(-200)); //true
+       */
+      //======String======
+      //7. Write a JavaScript function to check whether a string is blank or not.
+        /*
+        Test Data :
+        console.log(is_Blank('')); //true
+        console.log(is_Blank('abc')); //false
+        /*
+
+    //8. Write a JavaScript function to split a string and convert it into an array of words. 
+        /*
+        Test Data :
+        console.log(string_to_array("Robin Singh")); // ["Robin", "Singh"]
+        */
+    </script>
+</body>
+</html>

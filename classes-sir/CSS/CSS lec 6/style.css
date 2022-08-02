@@ -1,0 +1,66 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+.hover-class{
+    height: 130px;
+    width:140px;
+    border:1px solid red;
+}
+.hover-class:hover{
+    background-color: blue;
+    color:#fff;
+    font-size: 30px;
+}
+.input-elem{
+    width: 300px;
+    height: 20px;
+}
+.input-elem:focus{
+    background-color: red;
+    color:white;
+}
+.link-elem:visited,
+a:visited{
+    color:red;
+}
+
+.link-elem:hover{
+    color:green;
+}
+.link-elem1:link{
+    color:blue;
+}
+.link-elem1:active{
+    color:blue;
+}
+.input-elem:disabled{
+    background: blue;
+}
+/* ul li.first,
+ul li.last{
+    color:red;
+} */
+
+ul li:first-child,
+ul li:last-child{
+    color:red
+}
+
+ul li:nth-child(5){
+    color:green;
+}
+table{
+    border-collapse: collapse;
+}
+table tbody tr:nth-child(odd){
+    background-color: blue;
+    color:#fff;
+}
+table tbody tr:nth-child(even){
+    background-color: red;    
+    color:#fff;
+}

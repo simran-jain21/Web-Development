@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 11 - Selector and Event Listener</title>
+</head>
+<body>
+    
+    <!-- <button id="btn" onclick="onClickEve(this)">Click Me</button> -->
+
+    <button id="btn" >Click Me1</button>
+
+    <button id="btn1" >Click Me2</button>
+
+    <div id="box"><span>This is box</span></div>
+
+    <div class="div-class first"><h1>First, Hello World</h1></div>
+    <div class="div-class second"><div>Second, Hello World</div></div>
+    <div class="div-class third"><p>Third, Hello </p></div>
+
+    <p>para1</p>
+    <p>para2</p>
+    <p>para3</p>
+    <p>para4</p>
+
+    <p>First Name: <input name="fname" type="text" value="Michael"></p>
+<!-- <p>First Name: <input name="fname" type="text" value="Doug"></p> -->
+
+
+<button id="new-btn">Change Value</button>
+<div id="new-box">This is world</div>
+
+    <script>
+
+        // Event Listener 
+        function onClickEve(e){
+            // console.log(e)
+            console.log('Event')
+        }
+
+        var elem = document.getElementById('btn');
+        // console.log(elem)
+        elem.addEventListener('click',eventListenFunction)
+
+        function eventListenFunction(){
+            console.log('Event Listener Function')
+            elem.removeEventListener('click',eventListenFunction)
+        }
+        
+
+
+
+        var elem1 = document.getElementById('btn1');
+        // console.log(elem1)
+        elem1.addEventListener('dblclick',function(e){
+            console.log('Event listener another function')
+        })
+
+
+        // selectors
+
+        //id selector
+        var box = document.getElementById('box')
+        console.log(box.innerHTML)
+        console.log(box.innerText)
+
+        //class selector
+        var div = document.getElementsByClassName('div-class')
+        var secDiv = div[1]; 
+        // console.log(secDiv)
+
+        secDiv.addEventListener('click',function(){
+            alert(secDiv.innerHTML)
+        })
+
+        for (let i = 0; i < div.length; i++) {
+            var element = div[i];
+            console.log(element.innerText)
+            
+        }
+
+        //tag selector
+        var para = document.getElementsByTagName('p');
+        console.log(para[3].innerText);
+
+
+        //name selector
+        var elements = document.getElementsByName("fname");
+        console.log(elements[0].value)
+
+        //query selector
+
+        var elem = document.querySelector('#box')
+        // var elem = document.querySelectorAll('.div-class')
+
+        // var elem = document.querySelector('input[type=text]') //css selector
+
+        var elem = document.querySelector('.div-class.third');
+
+        console.log(elem)
+
+        var nBtn = document.getElementById('new-btn');  //button
+        var nBox = document.getElementById('new-box'); //div 
+
+        nBtn.addEventListener('click',function(){
+            nBox.innerHTML = 'This is our amazing world!'
+        })     
+
+        
+    </script>
+</body>
+</html>

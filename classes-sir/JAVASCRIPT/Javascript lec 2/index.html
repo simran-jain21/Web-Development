@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DAY2 - Function & Operators</title>
+</head>
+<body>
+    
+    <script>
+        // Function
+
+        function myFunction(){ // function declaration 
+            console.log('testing')
+        }
+
+
+        myFunction(); //function calling
+        myFunction();
+        myFunction();
+        myFunction();
+
+        function funWithPara(a = 'welcome'){  // a is parameter with default value
+            console.log(a);
+        }
+
+        funWithPara('Hello world');
+        funWithPara('Javascript');
+        funWithPara();
+
+        function funWithReturn(){
+             return 'Hello';
+
+            //  return 'Hello world';
+        }
+
+        var val = funWithReturn();
+        console.log(val);
+        
+// Operators
+
+        //Arithemetic operators
+        //+,-,*,/,%
+
+        var a = 60;
+        var b = 3;
+        console.log('sum=', a+b);
+        console.log('sub=',a-b);
+
+
+        function sumCalc(a,b){
+            var c  = a+b;
+            return c;
+        }
+
+        var sum = sumCalc(53,6);
+        console.log(sum);
+
+        //Assignment Operators
+        // +=, -=, *=, /=, %=
+
+        var a = 30;
+            a += 40;
+            console.log(a);
+
+        //Comparison operators
+        // ==, ===, !=, !=,<, >, <= ,>=
+
+        var a = 5;
+        var b = 6;
+        console.log(a==b);// f
+
+
+
+    </script>
+</body>
+</html>

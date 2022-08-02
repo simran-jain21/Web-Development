@@ -1,0 +1,70 @@
+@import '_variable';
+@import '_mixin';
+
+// variable
+// nesting
+// mixin
+// operator
+// extend
+// map
+/* font */
+
+
+
+.parent-div {
+    background-color: $bg-color;
+    h1{
+        color:red;
+        font-size: 3em + $font-size;
+
+        &:hover{
+            color:$font-color;
+        }
+    }
+    button {
+        @include buttonValue;
+        border-color: green;
+
+        @include buttonSize(3em, uppercase);
+    }
+}
+
+
+
+button{
+    @include buttonValue;
+
+    border-color:red;
+
+    @include buttonSize(2em, lowercase);
+}
+
+
+
+.block{
+    background-color: aquamarine;
+    font-size: map-get($map: $font-sizewithmap, $key:'desktop' );
+    
+}
+.block1{
+    @extend .block;
+    margin-top: 20px;
+    color:#fff;
+}
+
+@media screen and (max-width:1024px){
+ .block{
+    font-size: map-get($map: $font-sizewithmap, $key:'tablet' );
+ }
+}
+@media screen and (max-width:480px){
+    .parent-div {
+        button{
+            @include buttonSize(1em, capitalize);
+        }
+    }
+
+    .block{
+        font-size: map-get($map: $font-sizewithmap, $key:'mobile' );
+     }
+}

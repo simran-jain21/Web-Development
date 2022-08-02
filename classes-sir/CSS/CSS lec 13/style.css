@@ -1,0 +1,102 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.m-0{
+    margin: 0;
+}
+.p-0{
+    padding: 0;
+}
+/* Navbar Styling */
+.navbar{
+    background: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1em 8em;
+}
+.navbar .logo h1{
+    margin: 0;
+    padding: 0 10px;
+}
+.navbar .logo .ham{
+    display: none;
+}
+.navbar .menus ul{
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+.navbar .menus ul li a{
+    padding: 20px;
+
+}
+
+/* Hero section styling */
+.hero_section .hero-img{
+    color: #fff;
+    text-align: center;
+    height: 20em;
+    background: linear-gradient(180deg, blue, aqua);
+    padding: 4em 8em;
+
+}
+
+/* Card section styling */
+.cards{
+    background: #f1f1f1;
+    padding: 2em 8em;
+    display: table;
+}
+.cards .card{
+    display: table-cell;
+    text-align: center;
+    background-color: aquamarine;
+    border:8px solid #f1f1f1;
+    width: 33.3333%;
+    padding: 10px;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child{
+    width: 20%;
+}   
+@media only screen and (max-width:640px){
+    .navbar{
+        padding: 0 15px;
+        display: block;
+    }
+    .navbar .menus{
+        height: 80px;
+        display: none;
+    }
+    .navbar .logo{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .navbar .logo .ham{
+        display: block;
+    }
+    .navbar .logo .ham:hover .menus{
+        display: block;
+    }
+  
+    .navbar .menus ul{
+        display: block;
+        padding: 0;
+    }
+    .navbar .menus ul li a{
+        padding-left: 10px;
+    }
+
+
+}

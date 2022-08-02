@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DAY 3 - var scope & string methods</title>
+</head>
+<body>
+    
+
+    <script>
+      /*  var a = 4;
+        var b = 6;
+        console.log('a='+a);
+        console.log('b='+b);
+
+        var c = b; //c=6
+        b = a; // b= 4
+        a = c; // a= 6
+        console.log('a='+a);
+        console.log('b='+b);
+
+        var x = 20;
+        var y = 13;
+        console.log('x='+x);
+        console.log('y='+y);
+
+        x = x+y;
+        y = x-y;
+        x = x-y;
+
+        console.log('x='+x);
+        console.log('y='+y);
+        */
+        var status = 0;
+       var x = (status == 1)?'online':'offline'; //ternary operator
+       console.log(x);
+
+       var a = 100; // global scope
+       var y = 1;
+        function scopeFun(){
+            var b = 20; //local scope
+            y = 400;
+            console.log('in block',a); //100
+            console.log('in block',b); //20
+        }
+        console.log(y);
+        console.log('outside block',a); // 100
+        // console.log('outside block',b); //error
+        scopeFun();
+
+
+// String method
+        var a = 'Hello';
+        console.log(a);
+        console.log(a.length);
+
+        var b = 'world';
+
+        console.log(a+' '+b);
+
+        //conact - syntax - string.concat(string1,string2,....,stringN)
+        console.log(a.concat(' ',b));
+
+        console.log(a);
+        //indexOf - syntax - string.indexOf(value);
+        console.log(a.indexOf('l'));
+
+        //lastIndexOf - syntax - string.lastIndexOf(value);
+        console.log(a.lastIndexOf('l'));
+
+        var str = 'Lorem Ipsum is simply dummy text of the printing and Dummy typesetting industry.'
+        console.log(str)
+
+        //search - syntax - string.search('searchvalue');
+        console.log(str.search('ldkfj'));
+
+        //slice - syntax - string.string(start,end) //start-0 
+        console.log(str.slice(4))
+        console.log(str.slice(0,5))
+
+
+        //substring - syntax - string.substring(startIndex,endIndex) //endIndex is optional
+
+        console.log(str.substring(3));
+        console.log(str.substring(2,5))
+
+        //substr - syntax - string.substr(start,length) //length is optional
+
+        console.log(str.substr(4))
+        console.log(str.substr(4,2))
+        
+        //replace - syntax - string.replace('oldvalue','newvalue');
+
+        console.log(str.replace(/Dummy/ig,'original')); // i - insensitive & g- globally 
+
+        //toUpperCase - syntax - string.toUpperCase();
+        
+        console.log(str.toUpperCase());
+
+        //toLowerCase - syntax - string.toLowerCase();
+
+        console.log(str.toLowerCase());
+
+        //charAt - syntax - string.charAt(index)
+
+        console.log(str.charAt(4));
+
+        //split - syntax - string.split(symbol)
+
+        var a = 'ax ,bas,c,d';
+        console.log(a.split(' '))
+
+
+
+        
+    </script>
+</body>
+</html>

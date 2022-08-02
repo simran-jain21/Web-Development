@@ -1,0 +1,35 @@
+With Mockapi
+
+Create project named "Records" in mockapi 
+==============================
+Resource Name(Collection) - "users" 
+
+------------fields should be-------------
+ID 
+fullname
+username
+email
+password
+contact
+==============================
+
+APIs
+-------
+Method	URL				for
+GET	(your_mockapi_url)/users 	-get users records
+POST 	(your_mockapi_url)/users	-save form data
+GET	(your_mockapi_url)/users/:id	-get single user data
+PUT	(your_mockapi_url)/users/:id	-update single user record
+DELETE	(your_mockapi_url)/users/:id	-delete single user record
+
+====================
+Task
+
+1. List all users in table with "edit","delete" and "view" buttons
+2. click on "view" button to show user details in different component
+3. click on "delete" button to delete user from records
+4. click on "edit" button to edit user record and update
+
+
+
+

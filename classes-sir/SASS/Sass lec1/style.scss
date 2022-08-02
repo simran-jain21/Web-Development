@@ -1,0 +1,28 @@
+
+$bg-color: blue;
+$font-color:red;
+$font-size:20px;
+// Variables
+// Operators
+// Nested
+.parent-div{
+    background-color: $bg-color;
+    p{
+        color:#fff;
+        font-size: 3em;
+        &:hover{
+            color:black
+        }
+    }
+}
+/* Hello */
+h1{
+    color:$font-color;
+    font-size:40px + $font-size;
+}
+
+p{
+    color:$font-color;
+    font-size: 20px + font-size;
+}
+

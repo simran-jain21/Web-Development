@@ -1,0 +1,24 @@
+.parent-div {
+  background-color: blue;
+}
+
+.parent-div p {
+  color: #fff;
+  font-size: 3em;
+}
+
+.parent-div p:hover {
+  color: black;
+}
+
+/* Hello */
+h1 {
+  color: red;
+  font-size: 60px;
+}
+
+p {
+  color: red;
+  font-size: 20pxfont-size;
+}
+/*# sourceMappingURL=style.css.map */

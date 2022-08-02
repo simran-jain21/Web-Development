@@ -1,0 +1,8 @@
+.text{
+    color:Red;
+    border:2px solid green;
+    &:hover{
+        color: yellow;
+        border-color: aqua;
+    }
+}

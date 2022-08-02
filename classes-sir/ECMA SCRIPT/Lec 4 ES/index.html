@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // try catch - error handling
+
+        try {
+            // var a = 4;
+            console.log(a * 5);
+            // throw new SyntaxError(`a hasn't any value`)
+
+        } catch (error) {
+            console.log(error)
+            
+        } finally{
+            console.log('Finally executed.')
+        }
+        
+
+        console.log('Hello JavaScript');
+// ------------------------------
+        try {
+            var a = 10;
+            if(a> 10){
+                console.log('Success')
+            }
+            // throw new Error('a should be greater than 10')
+            throw new ReferenceError('a should be greater than 10')
+
+        } catch (error) {
+                console.log(error);
+        }
+
+// ---------------------
+    setTimeout(() => {
+        try {
+            console.log(b);
+            throw new Error('b is not defined!!!')
+        } catch (error) {
+            console.log(error)
+        }
+    }, 3000);
+
+    </script>
+</body>
+</html>

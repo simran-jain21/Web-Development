@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DAY 7 - Object & Condition</title>
+</head>
+<body>
+  <script>
+// Object
+      var obj = {
+          name:'Shilwant',
+          email:'iamshilwant@gmail.com',
+          contact:987654321,
+          arr:[2,4,5,6,9],
+          sum:function(x,y){
+              return x+y;
+          },
+          sub:function(x,y){
+              return x-y;
+          }
+        } 
+      console.log(obj)
+      console.log(obj.name)
+        obj.password = '1234';
+        obj.email = 'shilwant@gmail.com'
+        console.log(obj['email'])
+        console.log(obj.arr[3])
+        console.log(obj.sum(5,5))
+        console.log(obj.sub(30,5))
+
+
+
+      console.log(typeof obj);
+
+
+
+
+    //   var obj1 = new Object();
+    //   console.log(obj1)
+    //   console.log(typeof(obj1))
+
+
+
+    // Conditions
+        /* if(condition){
+
+        } */
+        var a = 9;
+        var b = 6;
+        
+        if(a == 4 || b == 6 ){
+            console.log('Hello')
+        }else{
+            console.log('Hi')
+        }
+
+        var a = 354;
+
+        var a ='665';
+        if(typeof a == 'number'){
+            console.log('Number')
+        }else{
+            console.log('Not a Number')
+        }
+
+
+
+
+
+  </script> 
+</body>
+</html>

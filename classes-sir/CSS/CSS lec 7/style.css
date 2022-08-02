@@ -1,0 +1,100 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0;
+}
+.parent-div p{
+    display: block;
+}
+.parent-div p span{
+    display: inline-block   ;
+}
+.card1{
+    display: inline-block;
+}
+
+.card-sec{
+    /* display: none; */
+    visibility: visible;
+}
+.btn{
+    background-color: blue;
+    color:#fff;
+    padding: 2px 20px;
+}
+.flex-container {
+    display: inline-flex;
+    /* display: none; */
+    background-color: DodgerBlue;
+    margin-bottom: 30px;
+  }
+  
+.flex-container  .child-div{
+background-color: #f1f1f1;
+margin: 10px;
+padding: 20px;
+font-size: 30px;
+}
+
+.navbar{
+    background-color: blue;
+    color:#fff;
+    padding:5px 20px;
+    height: 38px;
+}
+.navbar a{
+    color:#fff;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar .logo{
+    float: left;
+}
+.navbar .logo h1{
+    margin: 0;
+}
+.navbar .menus{
+    float: right;
+}
+.navbar ul li{
+    padding: 0 10px;
+}
+
+.main-card{
+    padding: 20px;
+    border:1px solid #333;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+}
+.main-card .card{
+    border:1px solid #333;
+    padding: 20px;
+    margin: 20px;
+}
+.navbar1{
+    background-color: aqua;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar1 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navbar1 ul li a{
+    padding: 10px;
+}
+.navbar1 h1{
+    margin: 0;
+}

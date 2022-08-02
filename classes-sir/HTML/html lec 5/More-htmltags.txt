@@ -1,0 +1,95 @@
+
+Layout Element-
+		<header> - Defines a header for a document or a section
+		<nav> - Defines a set of navigation links
+		<section> - Defines a section in a document
+		<article> - Defines an independent, self-contained content
+		<aside> - Defines content aside from the content (like a sidebar)
+		<footer> - Defines a footer for a document or a section
+		<details> - Defines additional details that the user can open and close on demand
+		<summary> - Defines a heading for the <details> element
+		
+1. 	<abbr>	Defines an abbreviation or an acronym
+
+The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+2.	<address>	Defines contact information for the author/owner of a document
+
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+3. 	<area>	Defines an area inside an image map
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+4.	<article>	Defines an article
+
+<article>
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+5.	<aside>	Defines content aside from the page content
+
+<aside>
+<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+6.	<canvas>	Used to draw graphics, on the fly, via scripting (usually JavaScript)
+
+7.  <code>	Defines a piece of computer code
+
+8.	<del>	Defines text that has been deleted from a document
+
+9.	<details>	Defines additional details that the user can view or hide
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+
+10.	<embed>	Defines a container for an external application
+
+<embed type="text/html" src="snippet.html" width="500" height="200">
+<embed type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+
+11.	<fieldset>	Groups related elements in a form
+ <fieldset>
+  <legend>Personalia:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+ 
+12. <footer>	Defines a footer for a document or section
+
+13.	<header>	Defines a header for a document or section
+
+14.	<ins>	Defines a text that has been inserted into a document
+
+15.	<main>	Specifies the main content of a document
+Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+16.	<mark>	Defines marked/highlighted text
+
+17.	<meta>	Defines metadata about an HTML document
+
+18.	<section>	Defines a section in a document
+
+19.	<span>	Defines a section in a document
+
+20.	<style>	Defines style information for a document
+
+21.	<svg>	Defines a container for SVG graphics
+
+22.	<u>	Defines some text that is unarticulated and styled differently from normal text

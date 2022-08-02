@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Object</title>
+</head>
+<body>
+    
+
+    <script>
+         
+         class TryCatch{ // parent class
+            constructor(x){ // parent class constructor
+                console.log('Constructor')
+                this.a = x;
+                console.log(this.a,'parent')
+            }
+            y = 10; // class property
+
+            abc(){ // class method
+                console.log('Hello world',this.a,this.y);
+            }
+            sum(x,y){
+                return x+y;
+            }
+         }
+
+ 
+
+         var obj = new TryCatch('Simran'); // object of parent class
+         obj.abc();
+         console.log(obj.y)
+         console.log(obj.a)
+         console.log(obj.sum(4,5))
+         
+        //  obj.abc();
+        //  console.log(obj.a)
+        //  console.log(obj.y)
+
+
+         var obj1 = new TryCatch("PHP");
+         obj1.abc()
+         console.log(obj1.a)
+
+
+         class ClassRoom extends TryCatch{ // child class inheriting parent class
+             constructor(x){ // child class constructor
+                 super(x); // inheriting parent class constructor
+                 console.log('Child constructor');
+             }
+
+             xyz(){
+                 console.log('Child method')
+             }
+         }
+console.log('---------------------------------------------------------')
+        var c_obj = new ClassRoom("Node");
+        // c_obj.abc("React");
+        // console.log(c_obj.y);
+        c_obj.xyz();
+       console.log( c_obj.sum(5,5))
+
+
+
+       console.log('----------------------A-----------------------------------')
+        class A extends ClassRoom{
+            constructor(){
+                console.log('A')
+                super('!s')
+            }
+             pqr(){
+                 console.log('A Class')
+             }
+         }
+         var cobj = new A();
+         cobj.pqr();
+         console.log(cobj.sum(23,43))
+
+
+    </script>
+</body>
+</html>

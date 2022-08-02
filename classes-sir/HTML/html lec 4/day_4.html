@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Day 4</title>
+</head>
+<body>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sr No.</th>
+                <th>Name</th>
+                <th colspan="2">Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Abc</td>
+                <td>1234</td>
+                <td>4321</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Abc</td>
+                <td>1234</td>
+                <td>4321</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Abc</td>
+                <td>1234</td>
+                <td>4321</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Abc</td>
+                <td>1234</td>
+                <td>4321</td>
+            </tr>
+        </tbody>
+  
+    </table>
+    <br>
+    <br>
+    <br>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th rowspan="2">Sr No.</th>
+                    <th colspan="2">Student</th>
+                    <th colspan="2">Teacher</th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>stud</td>
+                    <td>1234</td>
+                    <td>teac</td>
+                    <td>4321</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    <h1>Form</h1>
+    <div>
+        <form action="/index.php" method="post" enctype="multipart/form-data">
+            <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" required="true" placeholder="First Name"/>
+            </div>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email"  placeholder="Email"/>
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="*******"/>
+            <br>
+            <br>
+            <label for="contact">Contact</label>
+            <input type="number" name="contact"  placeholder="contact"/>
+            <br>
+            <br>
+            <label for="tel">TEl</label>
+            <input type="tel" name="tel" placeholder="tel" readonly value="12345"/>
+            <br>
+            <br>
+            <label for="message">Message</label>
+            <textarea style="height: 100px;" placeholder="write a message..."></textarea>
+            <input type="hidden" name="id" value="1242">
+
+            <br>
+            <br>
+            <label for="select">Select</label>
+            <select>
+                <option value="0" selected disabled>Select option</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+
+            </select>
+            <br>
+            <br>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="females">Female<br>
+            <br>
+            <br>
+            <input type="checkbox" name="sport[]" value="cricket">Cricket</br>
+            <label><input type="checkbox" name="sport[]" value="football">Football</label></br>
+            
+            <br>
+            <br>
+            <label for="color">color</label>
+            <input type="color" name="color" placeholder="color" />
+            <br>
+            <br>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="dob">
+            <br>
+            <br>
+            <label for="time">Time</label>
+            <input type="time" name="time">
+            <br>
+            <br>
+            <label for="local">Local Datetime</label>
+            <input type="datetime-local" name="local">
+            <br>
+            <br>
+            <input type="file" name="avatar" accept="image/*"/>
+            <br>
+            <input type="submit" value="Submit"/>
+            <br>
+           <!-- <button type="submit">Submit Form</button> -->
+        </form>
+        <iframe width="500" src="https://www.trycatchclasses.com" title="trycatchclasses  Online Web Tutorials"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KIjytEQrDiM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4605.957521255175!2d72.8500935122156!3d19.22915407447564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0d42c95bdf9%3A0x5a3374a957943f4b!2sTryCatch%20Classes%20%7C%20Data%20Science%20%26%20Analytics%2C%20Mobile%20App%20Development%2C%20Web%20Design%20%26%20Development%2C%20UI%20UX%2C%20Flutter%2C%20Android%2C%20IOS%2C%20Python%20Machine%20Learning%20Training%2C%20Cyber%20Security%2C%20Digital%20Marketing%20Course%20in%20Mumbai!5e0!3m2!1sen!2sin!4v1639893196345!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+        <video src='mov_bbb.mp4' autoplay controls></video>
+        <audio src='abc.mp3' autoplay></audio>
+        <br>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>last name</td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    
+    </div>
+</body>
+</html>

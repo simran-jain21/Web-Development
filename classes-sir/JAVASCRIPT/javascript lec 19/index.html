@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Object</title>
+</head>
+<body>
+    
+
+    <script>
+         
+         class TryCatch{ // parent class
+            constructor(x){ // parent class constructor
+                console.log('Constructor')
+                this.a = x;
+            }
+            y = 10; // class property
+            abc(str){ // class method
+                console.log('Hello world',str,this.a,this.y);
+            }
+         }
+
+ 
+
+         var obj = new TryCatch("Javascript"); // object of parent class
+         obj.abc("Js");
+         console.log(obj.a)
+         console.log(obj.y)
+
+
+         var obj1 = new TryCatch("PHP");
+         obj1.abc("Laravel")
+         console.log(obj1.a)
+
+
+         class ClassRoom extends TryCatch{ // child class inheriting parent class
+             constructor(x){ // child class constructor
+                 super(x); // inheriting parent class constructor
+                 console.log('Child constructor');
+             }
+
+             xyz(){
+                 console.log('Child method')
+             }
+         }
+
+        var c_obj = new ClassRoom("Node");
+        c_obj.abc("React");
+        console.log(c_obj.y);
+        c_obj.xyz();
+
+        class A extends ClassRoom{
+             pqr(){
+                 console.log('A Class')
+             }
+         }
+         var cobj = new A();
+         cobj.xyz();
+
+
+    </script>
+</body>
+</html>

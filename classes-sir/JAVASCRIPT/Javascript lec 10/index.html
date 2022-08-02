@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 9 - Loop </title>
+</head>
+<body>
+    <script>
+
+        //switch
+        /*switch (key) {
+            case value:
+              //statements
+                break;
+            case value2:
+                //statement
+        
+            default:
+                //statement
+                break;
+        }*/
+
+        var day = 2;
+        switch (day ){
+            case 1:
+                console.log('Monday')
+            break;
+            case 2:
+                console.log('Tuesday');
+            break;
+            case 3:
+                console.log('Wednesday');
+            break;
+            default:
+                console.log('Otherday');
+            break;
+        }
+
+        //for - syntax
+        // for(initialization;condition;increment/decrement){
+        //     statement
+        // }
+        for( var i = 1; i<10; i++){
+            console.log(i); //1,2.....9
+        }
+
+        var arr = [
+            {name:'shilwant',email:'shilwant@gmail.com'},
+            {name:'abc',email:'abc@gmail.com'},
+            {name:'xyz',email:'xyz@gmail.com'}
+        ]
+        console.log(arr);
+        for(var i = 0; i<arr.length; i++){
+            var obj = arr[i];
+            document.write('<h2>My name is '+obj.name+' and email is '+obj.email+'</h2><br>')
+        }
+
+
+        //while loop syntax
+
+        // while ( condition){
+        //     statement
+        // }
+
+        var i = 0;
+        while (i< 30){
+            console.log(i)
+            i++;
+        }
+
+
+        //do...while loop syntax
+
+        // do{
+        //     statement 
+
+        // }while(condition);
+
+        var i = 10;
+        do{
+            console.log(i);
+            i++;
+        }while(i<10);
+
+
+        // factorial number
+
+        var n = 5;
+        var fact = 1;
+        do{
+            fact = fact * n;
+            n--;
+        }while(n!=0);
+        console.log(fact);
+
+    </script>
+</body>
+</html>

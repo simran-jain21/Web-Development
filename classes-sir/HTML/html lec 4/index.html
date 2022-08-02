@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validate</title>
+    <script src="validate.js"></script>
+</head>
+<body>
+
+    <form action="" onclick="return validateForm()">
+        <input type="text" name="firstname" placeholder="First Name">
+        <input type="text" name="lastname" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script>
+        function validateForm(){
+            var data = validate({
+                        types:{
+                            firstname:'required',
+                            lastname:'required'
+                        },
+                        rules:{
+                            firstname:'First Name is required.',
+                            lastname:'Last Name is required.'
+                        }
+
+            });
+            if(data.status){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    /* background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg); */
+    /* background-attachment: fixed; */
+
+
+}
+.card{
+    height: 500px;
+    width: 500px;
+    /* background: red; */
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-size: contain; */
+    background-size:cover;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+.hello{
+    height: 2000px;
+    border:10px solid
+}
