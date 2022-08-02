@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DAY 4</title>
+</head>
+<body>
+<h2> Table </h2>
+<table border="1">
+	<thead>
+		<th>Sr.No.</th>
+		<th>Student</th>
+		<th>Teacher</th>
+	</thead>
+	<tr>
+		<td>1</td>
+		<td>abc</td>
+		<td>xyz</td>
+	<tr>
+	<tr>
+		<td>2</td>
+		<td>pqr</td>
+		<td>xyz</td>
+	<tr>
+</table>
+<br>
+<br>
+<table border="1">
+	<thead>
+		<th rowspan="2">Sr.no</th>
+		<th colspan="2"> Student</th>
+		<th colspan="2"> Teacher</th>
+	<tr>
+		<th>name</th>
+		<th>contact</th>
+		<th>name</th>
+		<th>contact</th>
+	</tr>
+	</thead>
+	<tr>	
+		<td>1</td>
+		<td>simran</td>
+		<td>9867</td>
+		<td>abc</td>
+		<td>7738</td>
+	</tr>
+</table>
+<br>
+<hr>	
+<br>
+
+<!-- firstname, lastname, email, contact, password, file(only video), dob, description(message), select, radio(gender), checkbox(hobbies) -->
+<form action="/" method="post">
+	<div>
+		<label for="fname"> F.Name </label>
+		<input type="text" name="fname" required>
+	</div>
+	<br>
+	<div>
+		<label for="lname"> L.Name </label>
+		<input type="text" name="lname">
+	</div>
+	<br>
+	<div>
+		<label for="email"> Email </label>
+		<input type="email" name="email">
+	</div>
+	<br>
+	<div>
+		<label for="contact"> contact </label>
+		<input type="number" name="contact">
+	</div>
+	<br>
+	<div>
+		<label for="password"> Password </label>
+		<input type="password" name="password">
+	</div>
+	<br>
+	<div>
+	<label><input type="radio" name="gender" value="Male"> Male</label> <br>
+	<label><input type="radio" name="gender" value="Female">Female</label>
+	</div>
+	<br>
+	<div>
+		<input type="checkbox" name="hobbies[]">
+		<label for="hobbies[]"> cricket </label>
+	</div>
+	<div>
+		<input type="checkbox" name="hobbies[]">
+		<label for="hobbies1[]"> football </label>
+	</div>
+	<div>
+		<input type="checkbox" name="hobbies[]">
+		<label for="hobbies3[]"> badminton </label>
+	</div>
+	<br>
+	<div>
+		<label for="dob">date of birth</label>
+		<input type="date" name="dob">
+	</div>
+	<br>
+	<div>
+		<label for="bloodgroup">Choose a bloodgroup:</label>
+		<select name="bloodgroup">
+			<option value=" " selected disabled>bg</option>
+			  <option value="A+">A+</option>
+			  <option value="B+">B+</option>
+			  <option value="AB+">AB+</option>
+			  <option value="O+">O+</option>
+		</select>
+	</div>
+	<br>
+	<div>
+		<input type="file" name="videos" accept="video/*">
+	</div>
+	<br>
+	<div>
+		<video src="https://www.shutterstock.com/video/clip-1057022666-mock-up-fantasy-rpg-moba-video-game-gameplay" height="200px" width="auto" controls>
+	</div>
+	<br>
+	<div>
+		<label for="message">message</label>
+		<textarea rows=10 columns="25" placeholder="write a mess..."></textarea>
+	<br>
+	<br>
+	<input type="submit" value="submit">
+</body>
+</html>
+		
