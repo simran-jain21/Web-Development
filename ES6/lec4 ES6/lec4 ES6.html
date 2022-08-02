@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec4 ES6</title>
+</head>
+<body>
+    
+    <script>
+        // try catch - error handling
+        try {
+            var a = 4;
+            console.log(a * 5);
+        } catch (error) {
+            console.log(error);
+        } finally{                                      //finally executes with both(with try as well as catch)
+            console.log('finally executed.')
+        }
+
+        // //////////////////////////////////////////////////////////
+
+        try {
+            var a = 4;
+            if (a > 10) {
+                console.log('Success')
+            }else{
+                console.log('a should be greater than 10');
+            }
+        } catch (error) {
+            console.log(error);
+        }
+
+        /////////////////////////////////////////////////////////////
+
+        try {
+            var a = 4;
+            if (a > 10) {
+                console.log('Success')
+            }else{
+                // throw new Error('a should be greater than 10');
+                throw new ReferenceError('a should be greater than 10');
+            }
+        } catch (error) {
+            console.log(error);
+        }
+
+        /////////////////////////////////////////////////////////////
+        
+        try {
+            // var a = 4;
+            if (a > 10) {
+                console.log('Success')
+            }else{
+                // throw new Error('a should be greater than 10');
+                throw new SyntaxError('a is not defined');
+            }
+        } catch (error) {
+            console.log(error);
+        }
+
+        /////////////////////////////////////////////////////////////
+        // try {                                                            //this is wrong because it will always throw error bcoz of time
+        //     setTimeout(() => {                                           //its not checking try catch as it is mentioned outside
+        //         console.log(b);
+        //         throw new Error('b is not defined');
+        //     }, timeout);
+        // } catch (error) {
+        //     console.log(error);
+        // }
+
+        /////////////////////////////////////////////////////////////
+        
+        setTimeout(() => {
+            try {
+                console.log(b);
+                throw new Error('b is not defined!!');
+            } catch (error) {
+                console.log(error);
+            }
+        }, timeout);
+
+        
+    </script>
+</body>
+</html>

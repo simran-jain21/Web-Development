@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var obj = {name:'hello',sum:function(x,y){
+            return x+y;
+        }}
+        console.log(obj);
+        console.log(obj.sum(5,5));
+
+        var arr = [2,3,function(){
+            return 'hello';
+        }];
+
+        console.log(arr[2]());
+
+        //map
+        var map = new Map();
+        console.log(map);
+        var data1 = {name:'simran'};
+        var data2 = 'name';
+        var data3 = [];
+
+        map.set(data1,{lastname:'jain'});
+        map.set(data2,'this is a string');
+        map.set(data3,'this is an array');
+
+        console.log(map);
+
+        console.log(map.values());
+        console.log(map.keys());
+        console.log(map.size);
+        // map.delete(data1);
+        // console.log(map);
+        console.log(map.has(data2));
+        // map.clear();
+        // console.log(map);
+
+
+        //set
+        var set = new Set([4,5,3,4]);
+        console.log(set);
+
+        set.forEach((val) =>{
+            console.log(val)
+        })
+
+        var obj1 = {
+            name:'Javascript',
+            email:'script@gmail.com',
+            contact:'76868589',
+            address:'malad',
+            madeby:'simran',
+            date:{
+                createat:'21/02/1998',
+                updatedat:'1/1/2000'
+            }
+        }
+
+            //destructure
+            var {name,email,contact,address,madeby,date:{createat,updatedat}} = obj1;
+            console.log(obj1);
+
+            console.log(name,email,contact,address,madeby,createat,updatedat);
+
+
+        //array destructure
+        var arr = [2,6,4,33,[2345,7382],4,5];
+
+        var a = arr[0];
+        var [a,b,c,d,[e,f],...arr1] = arr;
+        console.log(arr);
+        console.log(a,b,c,d,e,f,arr1);
+
+
+    </script>
+</body>
+</html>

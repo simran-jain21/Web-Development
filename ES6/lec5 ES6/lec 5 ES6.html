@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec5</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        
+            const obj = new Promise((resolve,reject)=>{
+                var a = true;
+                if(a){
+                    console.log('true block');
+                    resolve('Promise resolved');
+                }else{
+                    console.log('false block');
+                    reject('promise rejected');
+                }
+            });
+
+            
+            obj
+            .then((res)=>{
+                console.log(res);
+                console.log(obj);
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+
+            // ----------------------------------------------------
+
+            // const pro = new Promise((resolve,reject)=>{
+            //     var request = new XMLHttpRequest();
+
+            //     request.open('GET',"https://jsonplaceholder.typicode.com/users");
+            //     request.onreadystatechange = function() {
+            //         setTimeout(() => {
+            //             if(this.readyState === 4 && this.status === 200){
+            //                 resolve(this.responseText)
+            //             }else{
+            //                 reject('You did something wrong.')
+            //             }
+            //         }, 2000);
+            //     };
+            //     request.send();
+            // })
+
+            // pro
+            // .then((res)=> JSON.parse(res))
+            // .then((data)=>{
+            //     console.log(data);
+            // })
+            // .catch((err)=>{
+            //     console.log(err);
+            // })
+
+            //------------------------------------------------------------
+
+            fetch('https://jsonplaceholder.typicode.com/users')
+            .then((res)=>res.json())
+            .then((data)=>{
+                console.log('fetch=',data1);
+            })
+            .catch((err)=>{
+                console.log(err);
+            })
+
+            // --------------------------async/await ---------------------
+
+            async function abc(){
+                var a =20;
+                console.log(a);
+
+                return Promise.resolve('resolved')
+            }
+
+            abc()
+            .then((res)=>{
+                console.log(res);
+            })
+
+            // ------------------------------------------------------------
+
+            var newpro = new Promise((resolve,reject)=>{
+
+                setTimeout(() => {
+                    resolve(11);
+                }, 4000);
+            })
+            
+            async function callfun(){
+                console.log('await newpro');
+                var res = await newpro;
+                console.log(res)
+                return res;
+            }
+
+            callfun()
+            .then((res)=>{
+                console.log(res);
+            });
+    </script>
+</html>

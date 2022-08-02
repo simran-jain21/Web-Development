@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC 3</title>
+    <style>
+        .card{
+            border:2px solid #000000;
+            margin:20px;
+            display:inline-block;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var obj = {
+            data1:{
+                firstname:'Simran',
+                lastname:'Jain',
+                email:'s@gmail.com',
+                contact:7467884930
+                },
+            data2:{
+                firstname:'teju',
+                lastname:'Jain',
+                email:'t@gmail.com',
+                // contact:87649876567
+            }
+        }
+        // console.log(obj.data1);
+        // console.log(obj['data1']);  //key samajne ke liye single quotes dena hoga
+
+        var card = ' ';
+        for(const a in obj){    //a- const variable(key names aate hai ismein)
+            let o = obj[a];
+            // console.log(o);
+            card += `<div class="card">
+                        <div>Name:${(o.firstname)?o.firstname:'NA'} ${(o.lastname)?o.lastname:'NA'}</div><br>
+                        <div>email:${(o.email)?o.email:'NA'}</div> <br>
+                        <div>contact:${(o.contact)?o.contact:'NA'}</div>
+                    </div>`
+        }
+        document.write(card);
+
+
+        //FOR EACH
+        var arr = [23,54,7,4,64,242,535,0];
+        arr.forEach(function(value,index){
+            console.log(value);
+        })
+
+        //for in
+        var str = 'Hello javascript';
+        for(const s in str){
+            console.log(str[s]);
+        }
+
+        //for of
+        var newarr = [23,54,7,4,64,242,535,0];
+        for(const value of newarr){
+            console.log(value);
+        }
+
+    </script>
+</body>
+</html>
