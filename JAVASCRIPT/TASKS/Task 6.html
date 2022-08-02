@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <!-- 1. Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8. -->
+
+    <input type="text" id="in1">
+    <input type="text" id="in2">
+    
+    <button id="btn">Click</button>
+
+    <p id="para" style="border:1px solid #000000 ; height:40px; width:400px">Answer:- </p>
+
+    <script>
+        
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(){
+            var read1 = document.getElementById('in1').value;
+            console.log(read1);
+            var read2 = document.getElementById('in2').value;
+            console.log(read2);
+
+            var result;
+            if(Number(read1) == 8 || Number(read2) == 8){
+                result = 'or condition is 8';
+            }else if(Number(read1)+Number(read2) == 8){
+                result = 'sum is 8';
+            }else if(Number(read1)-Number(read2) == 8){
+                result = 'difference is 8';
+            }else{
+                result = 'two given integers are neither 8 nor sum/difference is 8';
+            }
+
+            document.getElementById('para').innerHTML += result;
+            
+            });
+        
+    </script>
+</body>
+</html>

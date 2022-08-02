@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           form{
+            width: 20em;
+            padding: 20px;
+        }
+.fields.input{
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 0;
+  outline: none;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+}
+button{
+  background: #f1f1f1;
+  border: 1px solid #707070;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+.err{
+  color:red;
+  margin-top: 0;
+}
+    </style>
+</head>
+<body>
+    <h1>Form Validation JS</h1>
+<hr>
+<form action="" onsubmit="return onSubmitForm()">
+        <div class="form-group">
+            <label for="username">Username</label><br>
+            <input type="text" label="input" class="fields input" name="username" id="username">
+            <p class="err" id="username_err"></p>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label><br>
+            <input type="text" label="input" class="fields input" name="email" id="email">
+            <p class="err" id="email_err"></p>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label><br>
+            <input type="password" label="input" class="fields input" name="password" id="password">
+            <p class="err" id="password_err"></p>
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact</label><br>
+            <input type="text" label="input" class="fields input" name="contact" id="contact">
+            <p class="err" id="contact_err"></p>
+        </div>
+        <div class="form-group">
+            <label>Gender</label><br>
+            <label><input type="radio" name="gender" class="fields" label="select" id="gender_m"> Male</label>
+            <label><input type="radio" name="gender" class="fields" label="select" id="gender_f"> Female</label>
+
+            <p class="err" id="gender_err"></p>
+        </div>
+        <div class="form-group">
+            <label for="state">State</label><br>
+            <select class="fields input" label="select" name="state" id="state">
+                <option value="">---</option>
+                <option value="MH">Maharashtra</option>
+                <option value="JH">Jharkhand</option>
+                <option value="GJ">Gujrat</option>
+            </select>
+            <p class="err" id="state_err"></p>
+        </div>
+        <div class="form-group">
+            <label for="city">City</label><br>
+            <select class="fields input" label="select" name="city" id="city">
+                <option value="">---</option>
+            </select>
+            <p class="err" id="city_err"></p>
+        </div>
+        <div class="form-group">
+            <label for="about">About</label><br>
+            <textarea class="fields input" label="input" name="about" id="about" rows="4"></textarea>
+            <p class="err" id="about_err"></p>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    <script>
+          var cities = {
+            'MH':['Mumbai','Borivali','Navi Mumbai'],
+            'JH':['Ranchi','Hazaribagh','Koderma'],
+            'GJ':['Surat','Ahmedabad','Rajkot']
+        }
+
+        var state = document.getElementById('state');
+        var city = document.getElementById('city');
+        state.addEventListener('change',function(e){
+            var code = e.target.value;
+            console.log(code)
+            var option = '<option value="" >---</option>';
+            if(code == 'MH'){
+                cities.MH.forEach(function(city) {
+                    option += '<option value="'+city+'">'+city+'</option>';
+                });
+            }else  if(code == 'JH'){
+                cities.JH.forEach(function(city) {
+                    option += '<option value="'+city+'">'+city+'</option>';
+                });
+            }else if(code == 'GJ'){
+                cities.GJ.forEach(function(city) {
+                    option += '<option value="'+city+'">'+city+'</option>';
+                });
+            }else{
+                option += '';
+            }
+            city.innerHTML = option;
+   });
+
+// onkey up remove error
+var fields = document.querySelectorAll('.fields');
+fields.forEach(function(elem,index){
+    var label = elem.getAttribute('label');
+  if(label == 'input'){
+    elem.onkeyup = function(){
+      var name = this.getAttribute('name'); 
+      document.getElementById(name+'_err').innerText = ''
+    }
+  }else{
+    elem.onchange = function(){
+      var name = this.getAttribute('name'); 
+      console.log(name);
+      document.getElementById(name+'_err').innerText = ''
+  }
+  }
+})
+
+
+function onSubmitForm (){
+            var flag = 0; 
+            var username = document.getElementById('username').value;
+            var username_err = document.getElementById('username_err');
+            var email = document.getElementById('email').value;
+            var email_err = document.getElementById('email_err');
+            var password = document.getElementById('password').value;
+            var password_err = document.getElementById('password_err');
+            var contact = document.getElementById('contact').value;
+            var contact_err = document.getElementById('contact_err');
+            var gender_m = document.getElementById('gender_m');
+            var gender_f = document.getElementById('gender_f');
+            var gender_err = document.getElementById('gender_err');
+            var state = document.getElementById('state').value;
+            var state_err = document.getElementById('state_err');
+            var city = document.getElementById('city').value;
+            var city_err = document.getElementById('city_err');
+            var about = document.getElementById('about').value;
+            var about_err = document.getElementById('about_err');
+            var email_regex = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}';
+            var pass_regex = '/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/'
+
+            if(username == ''){
+                username_err.innerText = 'Username is required.';
+                flag = 1;
+            }else{
+                username_err.innerText = ''
+            }
+            if(email == ''){
+                email_err.innerText = 'Email is required.'
+                flag = 1;
+            }else{
+                if(!email.match(email_regex)){
+                    email_err.innerText = 'Enter valid email address.'
+                    flag = 1;
+                }else{
+                    email_err.innerText = ''
+                }
+               
+            }
+            if(password == ''){
+                password_err.innerText = 'Password is required.'
+                flag = 1;
+            }else{
+                if(!password.match(pass_regex)){
+                    password_err.innerText = 'Password must be 8 letter , with at least a symbol, upper and lower case letters and a number';
+                }else{
+                    password_err.innerText = ''
+                }
+                
+            }
+            if(contact == ''){
+                contact_err.innerText = 'Contact is required.'
+                flag = 1;
+            }else{
+                contact_err.innerText = ''
+            }
+            if(!gender_m.checked && !gender_f.checked){
+                gender_err.innerText = 'Gender is required.'
+                flag = 1;
+            }else{
+                gender_err.innerText = ''
+            }
+            if(state == ''){
+                state_err.innerText = 'State is required.'
+                flag = 1;
+            }else{
+                state_err.innerText = ''
+            }
+            if(city == ''){
+                city_err.innerText = 'City is required.'
+                flag = 1;
+            }else{
+                city_err.innerText = ''
+            }
+            if(about == ''){
+                about_err.innerText = 'About is required.'
+                flag = 1;
+            }else{
+                about_err.innerText = ''
+            }
+            if(flag == 0){
+                return true;
+            }else{
+                return false;
+            }
+            
+        }
+
+        
+    </script>
+</body>
+</html>

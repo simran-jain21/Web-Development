@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec 8</title>
+</head>
+<body>
+    <script>
+        //conditions
+
+        var x = 50;
+        var y = 25;
+        var z = 150;
+        var max
+        if( x > y){
+            if(x > z){
+                max = x;
+            }else{
+                max = z;
+            }
+        }else{
+            if(y > z){
+                max = y;
+            }else{
+                max = z
+            }
+        }
+        console.log('greatest value = ', max);
+
+        //task:- using if condition
+
+        // function triangle(a,b,c){
+        //     if( ( a != b ) && ( b != c ) && ( a != c ) ){
+        //         return 'scalene triangle'
+        //     }
+        //     if( ( a == b ) || ( b == c ) || ( a == c ) ){
+        //         return 'Isosceles traingle';
+        //     }
+        //     if( ( a == b ) && ( b == c ) && ( a == c ) ){
+        //         return 'Equilateral triangle';
+        //     }
+        // }
+        
+        // console.log('triangle is a ', triangle( 6,3,4));
+
+    //if else if condition  
+        // if(condition){
+        // 
+        // }else if{
+        // 
+        // }else{
+        // 
+        // }
+    
+        // task :- using if else if
+        // var result;
+
+        // function triangle(a,b,c){
+        //     if( ( a == b ) && ( b == c ) && ( a == c ) ){
+        //         return result = 'Equilateral triangle';
+        //     }
+        //     else if( ( a == b ) || ( b == c) || ( a == c) ){
+        //         return result = 'Isosceles traingle';
+        //     }
+        //     else{
+        //         return result = 'scalene triangle';
+        //     }
+        // }
+        // triangle(6,5,4);
+        // console.log('triangle is a ', result );
+
+        //task - number or not & greater value
+        // function greatest(a,b,c){
+        //     var max;
+        //     if( !isNaN(a) && !isNaN(b) && !isNaN(c)){
+        //         if( a > b && a > c){
+        //             return max = a;
+        //         }else if( b > a && b > c){
+        //             return max = b
+        //         }else{
+        //             return max = c;
+        //         }
+        //     }else{
+        //          console.log(alert('please enter a valid input'))
+        //          }
+        //     }
+        //     greatest(2,'a',6)
+        //     console.log('greatest value = ', max);
+
+        //task -grade
+        
+        
+        // function marks(a){
+        //     var result;
+        //     if( ( a >= 300 ) && ( a <= 500 ) ){
+        //         result = 'First class';
+        //     }
+        //     else if( (a >= 250 ) && ( a < 300 ) ){
+        //         result = 'Second class';
+        //     }
+        //     else if( ( a >= 125 ) && ( a < 250 ) ){
+        //         result = 'Third class';
+        //     }
+        //     else{
+        //         result = 'fail';
+        //     }
+        //     return result;
+        // }
+        
+        // console.log('class = ' , marks(300));
+
+        //task calculator - type 1 way of writing
+        // function cal( a,op,b){
+        //     if( op == '+'){
+        //         return a+b;
+        //     }else if(op == '-'){
+        //         return a-b;
+        //     }else if(op == '*'){
+        //         return a*b;
+        //     }else if(op == '/'){
+        //         return a/b;
+        //     }else if(op == '%'){
+        //         return a%b;
+        //     }else{
+        //         console.log(alert('please enter a valid operator'));
+        //     }
+        // }
+        // console.log('solution + = ',cal( 10 ,'+', 2));
+        // console.log('solution - = ',cal( 10 ,'-', 2));
+        // console.log('solution * = ',cal( 10 ,'*', 2));
+        // console.log('solution / = ',cal( 10 ,'/', 2));
+
+        //task calculator - type 1 way of writing
+        // function cal( a,op,b){
+        //     if( op == '+'){
+        //         result = a+b;
+        //     }else if(op == '-'){
+        //         result = a-b;
+        //     }else if(op == '*'){
+        //         result = a*b;
+        //     }else if(op == '/'){
+        //         result = a/b;
+        //     }else if(op == '%'){
+        //         result = a%b;
+        //     }else{
+        //         console.log(alert('please enter a valid operator'));
+        //     }
+        //     return result;
+        // }
+        // console.log('solution + = ',cal( 10 ,'+', 2));
+        // console.log('solution - = ',cal( 10 ,'-', 2));
+        // console.log('solution * = ',cal( 10 ,'*', 2));
+        // console.log('solution / = ',cal( 10 ,'/', 2));
+        
+        // task - number is present in the range or not
+        function present( a,start,end){
+            if (a > start && a < end){
+                value = a+' is between the range '+start+' & '+end;
+            }else{
+                value = 'a is outside the range';
+            }
+            return value;
+        }
+        console.log(present(25,20,40));
+
+    </script>
+</body>
+</html>

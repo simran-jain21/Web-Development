@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks</title>
+</head>
+<body>
+    <script>
+    //task 1
+//============================================Condition===================================================================
+        // 1. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result.
+        //Sample numbers : 0, -1, 4
+        //Output : 4, 0, -1
+            function con_sort(a, b, c){
+                if(a > b && a > c){
+                            if(b > c){
+                                console.log(a+' '+b+' '+c);
+                            }else{
+                                console.log(a+' '+c+' '+b);
+                            }
+                }else if(b > a && b > c ){
+                        if(c > a){
+                            console.log(b+' '+c+' '+a );
+                        }else{
+                            console.log(b+' '+a+' '+c );
+                        }
+                }else if(c > a && c> b){
+                    if(b > a){
+                        console.log(c+' '+b+' '+a );
+                    }else{
+                        console.log(c+' '+a+' '+b)
+                    }
+                }
+            }
+            con_sort( 0, -1, 4 );
+
+//=============================================MATH========================================================================
+        //2. Write a JavaScript function to generate a random integer. 
+        //console.log(rand(20,1));
+        //console.log(rand(1,10));
+        //console.log(rand(6));
+        //console.log(rand());
+
+        function rand(min,max){
+            if(max == null && min == null){
+                return 0;
+            }if(max == null){
+                max = min; //max = 20; min = 0
+                min = 0;
+            }
+            return min + Math.floor(Math.random() * (max-min+1));
+        }
+        var result = rand(20,1);
+        console.log('random integer 20,1 = ',result);
+        var result = rand(1,10);
+        console.log('random integer 1,10 = ',result);
+        var result = rand(6);
+        console.log('random integer 6 = ',result);
+        var result = rand();
+        console.log('random integer  = ',result);
+
+//=============================================================================================================================
+
+        //3. Write a JavaScript function to find the highest value in an array.
+        //Test Data :
+            //console.log(max([12,34,56,1])); // 56
+                function max_value1(arr1){
+                    return Math.max.apply(null,arr1);
+                }
+                    var result1 = max_value1([12,34,56,1]);
+                    console.log('TASK 3:-   max value = ', result1);
+
+
+            //console.log(max([-12,-34,0,-56,-1])); //0
+                function max_value2(arr2){
+                    return Math.max.apply(null,arr2);
+                }
+                    var result2 = max_value2([-12,-34,0,-56,-1]);
+                    console.log('TASK 3:-   max value = ', result2);
+
+//============================================================================================================================ 
+        //4. Write a JavaScript function to find the lowest value in an array.
+        // Test Data :
+            //console.log(min([12,34,56,1]));  
+               function min_value1(array1){
+                   return Math.min.apply(null,array1);
+               }
+               var result1 = min_value1([12,34,56,1]);
+               console.log('Task 4:-    min value = ', result1);
+            
+            //console.log(min([-12,-34,0,-56,-1])); //-56
+                function min_value2(array2){
+                    return Math.min.apply(null,array2);
+                }
+                var result2 = min_value2([-12,-34,0,-56,-1]);
+                console.log('Task 4:-    min value = ', result2);
+
+// =============================================================================================================================
+        
+        //5. Write a JavaScript function to round a number to a given decimal places. 
+        //Test Data :
+            //console.log(precise_round(12.375,2)); 
+            //console.log(precise_round(-10.3079499, 3));
+            //console.log(precise_round(10.49999,0));
+            //console.log(precise_round(10.49999,2));
+
+                function precise_round(num , a){
+                    if(num ==null & a == null){
+                        return 'Please enter a value'
+                    }
+                    if( a == 0){
+                        return 0;
+                    }
+                    return num.toPrecision(a);
+                }
+                var result = precise_round(12.375,2);
+                console.log('Task 5:-   ', result)
+                var result = precise_round(-10.3079499,3);
+                console.log('Task 5:-   ', result)
+                var result = precise_round(10.49999,2);
+                console.log('Task 5:-   ', result)
+                var result = precise_round(10.49999,0);
+                console.log('Task 5:-   ', result)
+
+//===============================================================================================================================
+        //6. Write a JavaScript function to check  whether a variable is numeric or not.
+        //Test Data :
+            //console.log(is_Numeric(12)); //true
+            //console.log(is_Numeric('abcd')); //false
+            //console.log(is_Numeric(' ')); // false
+            //console.log(is_Numeric(1.20)); //true
+            //console.log(is_Numeric(-200)); //true
+                
+
+                function is_Numeric(num){
+                    if(isFinite(num) && !isNaN(parseFloat(num)) && typeof num == "number"){
+                        return true;
+                    }else{
+                        return false;
+                    }
+                }
+                var result = is_Numeric(12);
+                console.log('Task 6= ', result);
+                var result = is_Numeric('abcd');
+                console.log('Task 6= ', result);
+                var result = is_Numeric(' ');
+                console.log('Task 6= ', result);
+                var result = is_Numeric(1.20);
+                console.log('Task 6= ', result);
+                var result = is_Numeric(-200);
+                console.log('Task 6= ', result);
+                var result = is_Numeric('');
+                console.log('Task 6= ', result);
+                var result = is_Numeric();
+                console.log('Task 6= ', result);
+                //------------------------------------------
+                console.log("=================================")
+                function is_Numeric(num){
+                    if(isFinite(num) && !isNaN(parseFloat(num))){
+                        return true;
+                    }else{
+                        return false;
+                    }
+                }
+                var result = is_Numeric(12);
+                console.log('Task 6= ', result);
+                var result = is_Numeric('abcd');
+                console.log('Task 6= ', result);
+                var result = is_Numeric(' ');
+                console.log('Task 6= ', result);
+                var result = is_Numeric(1.20);
+                console.log('Task 6= ', result);
+                var result = is_Numeric(-200);
+                console.log('Task 6= ', result);
+                var result = is_Numeric('');
+                console.log('Task 6= ', result);
+                var result = is_Numeric();
+                console.log('Task 6= ', result);
+                
+//============================================String========================================================================
+        //7. Write a JavaScript function to check whether a string is blank or not.
+        //Test Data :
+            //console.log(is_Blank('')); //true
+            //console.log(is_Blank('abc')); //false
+            function is_empty(a){
+                console.log(typeof a);
+                return (a == null || a == '')?'true':'false';
+            }
+            result = is_empty();
+            console.log('Task 7= ', result);
+
+        //8. Write a JavaScript function to split a string and convert it into an array of words. 
+        //Test Data :
+            //console.log(string_to_array("Robin Singh")); // ["Robin", "Singh"]
+            function Array1(name){
+                return name.split(' ');
+            }
+            var result = Array1('Robin Singh');
+            console.log('Task 8 = ' ,result); 
+
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfunction2(a){
+            console.log(a);
+            document.write(a,'<br>')
+        }
+
+        myfunction2('this is my script');
+    //////////////////////////////////////////////////////////////////////// 
+
+        function funwithpara1(a){
+            console.log('testing');
+            document.write('testing','<br>')
+        }
+
+        funwithpara1();
+    //////////////////////////////////////////////////////////////////////// 
+
+        function funwithpara(a='Welcome'){
+            console.log(a);
+            document.write(a,'<br>')
+        }
+
+        funwithpara();
+    //////////////////////////////////////////////////////////////////////// 
+
+        function myfunction(){
+            return 'hey Simran';
+        }
+
+        var store = myfunction();
+        console.log(store);
+        document.write(store,'<br>');
+
+    //////////////////////////////////////////////////////////////////////// 
+
+        function sums(a=5 ,b=6){
+            return a+b;
+        }
+
+        var x= sums();
+        console.log(x);
+        document.write(x,'<br>');
+    //////////////////////////////////////////////////////////////////////// 
+
+        function sum(a ,b){
+                var c = a + b;
+                console.log('sum=',c);
+                document.write(c,'<br>')
+            }
+        sum(5 , 5);
+    //////////////////////////////////////////////////////////////////////// 
+        function sum1(a='' ,b=5, c=5){
+                return a+(b+c);
+            }
+
+        var y= sum1('hello ');
+        console.log(y);
+        document.write(y,'<br>');
+
+        ////////////////////////////OPERATORS//////////////////////
+        //////ARITHMETIC OPERATORS//////
+        function sumcalc(a,b){
+            var c = a + b;
+            return c;
+        }
+
+        function minus(x, y){
+            var z= x-y;
+            return z;
+        }
+
+        function multi(x, y){
+            var z= x*y;
+            return z;
+        }
+
+        function divide(x, y){
+            var z= x/y;
+            return z;
+        }
+
+        function mod(x, y){
+            var z= x%y;
+            return z;
+        }
+
+        var ans = sumcalc(5,10);
+        console.log('operator plus = ',ans);
+        document.write('operator plus = ', ans,'<br>');
+
+        var ans1=minus(10,5);
+        console.log('operator minus = ',ans1);
+        document.write('operator minus = ', ans1,'<br>');
+
+        var ans2=multi(2,2);
+        console.log('operator multi = ',ans2);
+        document.write('operator multi = ', ans2,'<br>');
+
+        var ans3=divide(10,2);
+        console.log('operator divide = ',ans3);
+        document.write('operator divide = ', ans3,'<br>');
+
+        var ans4=mod(10,4);
+        console.log('operator mod = ',ans4);
+        document.write('operator mod = ', ans4,'<br>');
+        
+        ////////////////////////ASSIGNMENT OPERATORS//////////////////////////////////////////////// 
+        var c=10;
+        c=+20;
+        console.log(c);
+        document.write('operator assignplus = ', c,'<br>');
+
+        var a=20
+        a-=10;
+        console.log(a);
+        document.write('operator assignminus = ', a,'<br>');
+
+        var b=10;
+        b*=4;
+        console.log(b);
+        document.write('operator assignmulti = ', b,'<br>');
+
+        var d=20;
+        d/=5;
+        console.log(d);
+        document.write('operator assigndivide = ', d,'<br>');
+
+        var m=20;
+        m%=5;
+        console.log(m);
+        document.write('operator assignmod = ', m,'<br>');
+        
+
+        var a="hello"
+        a+="java"
+        console.log(a);
+        document.write('operator assignstring = ', a,'<br>');
+
+        var m="java";
+        var n="hello"
+        m-=n;
+        console.log(m);
+        document.write('operator assignstringminus = ', m,'<br>');
+
+        var x='5';
+        var y='6';
+        x-=y;
+        console.log(x);
+        document.write('operator assignplus = ', x,'<br>');
+
+    </script>
+</body>
+</html>

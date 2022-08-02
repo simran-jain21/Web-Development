@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3:- Calculator</title>
+    <link rel="stylesheet" href="Task3.css">
+</head>
+
+<body>
+    <div class="box">
+        <input type="text" name="" value="" id="row">
+        <div class="row1">
+            <button class="num" value="7">7</button>
+            <button class="num" value="8">8</button>
+            <button class="num" value="9">9</button>
+            <button value="/" class="orange num">/</button>
+        </div>
+        <div class="row2">
+            <button class="num" value="4">4</button>
+            <button class="num" value="5">5</button>
+            <button class="num" value="6">6</button>
+            <button value="*" class="orange num">x</button>
+        </div>
+        <div class="row3">
+            <button class="num" value="1">1</button>
+            <button class="num" value="2">2</button>
+            <button class="num" value="3">3</button>
+            <button value="+" class="orange num">+</i></button>
+        </div>
+        <div class="row4">
+            <button class="num" value="0">0</button>
+            <button value="." class="orange num ">.</button>
+            <button value="=" id="calculate" class="orange">=</button>
+            <button value="-" class="orange num">-</button>
+        </div>
+
+
+        <script>
+        
+            var num = document.getElementsByClassName('num');
+            for(i=0;i<num.length;i++){
+                num[i].addEventListener('click',function(e){
+                    console.log(e.target.value);
+                    var input = document.getElementById('row');
+                    input.value += e.target.value;
+                    console.log(input.value);
+                })
+            }
+            var result = document.getElementById('calculate');
+                result.addEventListener('click',function(){
+                    var result = document.getElementById('row');
+                    result.value = eval(result.value);
+                })
+            
+            
+
+                
+
+
+
+
+            // function clicked(e) {
+            //     console.log(e.value);
+            //     var input = document.getElementById('row');
+            //     input.value += e.value;
+            // }
+
+            // function calculate() {
+            //     var result = document.getElementById('row');
+            //     console.log(result.value)
+            //     result.value = eval(result.value);
+        </script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javscript lec 3</title>
+</head>
+<body>
+    <script>
+    /////////TASK1-swap with extra var c/////////// 
+    document.write('TASK','<br>');
+    var a = 5;
+    var b = 6;
+    var c;
+
+    console.log('a = ',a);
+    document.write('a = ',a, '<br>');
+    console.log('b = ',b);
+    document.write('b = ',b, '<br> <br>');
+
+    c = a;
+    a = b;
+    b = c;
+    console.log('a = ',a);
+    document.write('a = ',a, '<br>');
+    console.log('b = ',b);
+    document.write('b = ',b, '<br> <br>');
+
+        /////////TASK2-swap without extra var/////////// 
+    document.write('TASK2','<br>');
+    var x = 5;
+    var y = 10;
+    
+    console.log('x = ',x);
+    document.write('x = ',x, '<br>');
+    console.log('y = ',y);
+    document.write('y = ',y, '<br> <br>');
+    
+    x = x + y;  //x = 5+10 = 15
+    y = x - y;  //y = 15 - 10 = 5
+    x = x - y;  //x = 15 - 5 = 10
+
+    console.log('x = ',x);
+    document.write('x = ',x, '<br>');
+    console.log('y = ',y);
+    document.write('y = ',y, '<br> <br>');
+    
+    /////////TERNARY OPERATOR///////////////////////////
+    document.write('TERNARY OPERATOR','<br>');
+
+    var d = (3 == 3)?'Correct':'Incorrect';
+    console.log('d = ',d);
+    document.write('d = ',d, '<br>');
+    var status = 1;
+    var e = (status == 1)?'Online':'Offline';
+    console.log('e = ',e);
+    document.write('e = ',e, '<br> <br>');
+
+    ///////function///////////
+
+    var f = 100;
+    var g;
+    
+    function ScopeFunc(){
+        f = 200;
+        console.log('f = ',f);
+        g = 500;
+        console.log('g = ',g);
+        
+    }
+    console.log('f global var  = ',f);
+    console.log('g global var = ',g);
+    
+    ScopeFunc();
+    console.log('f global var = ',f);
+    console.log('g global var = ',g);
+   
+    ////////////////////////
+    var h = 10;
+
+    function help(){
+       var h = 300;
+        console.log('h = ',h);
+    }
+    console.log('h global var = ',h);
+    help();
+    console.log('h global var = ',h);
+    
+    //===============================STRING METHODS============================================
+    document.write('STRING METHODS', '<br>');
+    
+    var i = 'Simran';
+    console.log(i);                                             //Simran
+    console.log(i.length);                                      //6
+
+    var j = 'Jain';
+    console.log(i+' '+j)                                        //Simran Jain
+    //concat - syntax - string.concat(string1,string2,...,stringN)
+    console.log(i.concat(' ',j));                               //Simran Jain
+
+    console.log(i);                                             //Simran
+    //indexOf - syntax - string.indexOf(value)
+    console.log(i.indexOf('a'));                                //4
+    console.log(i.lastIndexOf('a'));                            //4
+
+    var str='Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
+    console.log(str);                                           //Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    //search - syntax - string.search(searchvalue)
+    console.log(str.search('simply'));                          //15
+
+    //slice - syntax - string.slice(start,end) //start-0        //IN USE
+    console.log(str.slice(6));                                  //Ipsum is simply dummy text of the printing and typesetting industry.
+    console.log(str.slice(0,5))                                 //Lorem
+    console.log(str.slice(15,27));                              //simply dummy
+
+    //substring - syntax - string.substring(startIndex,endIndex) //start-0    //NOT IN USE
+    console.log(str.substring(0,5));
+
+    console.log(str);
+    //substr - syntax - string.substr(startIndex,length)
+    console.log(str.substr(6,10));
+
+    console.log(str);
+    //replace - syntax - string.replace('old value','new value')
+    console.log(str.replace('Lorem','Simran'));
+
+    var str1 = 'Lorem Ipsum is simply dummy text of the Dummy and typesetting industry.'
+    console.log(str1); 
+    console.log(str1.replace('dummy','Original'));
+    console.log(str1.replace(/Dummy/ig,'Original'));         //I=INSENSITIVE G=GLOBAL
+
+    console.log(str1);
+     //toUpperCase - syntax - string.toUpperCase();
+    console.log(str1.toUpperCase(str1));
+     //toLowerCase - syntax - string.toLowerCase();
+     console.log(str1.toLowerCase(str1));
+
+     //charAt - syntax - string.CharAt(index);
+     console.log(str.charAt(4));
+     console.log(str.charAt(4,8)); //will give one letter only
+
+     //split - syntax - string.split(symbol)
+     console.log(str1);
+     console.log(str1.split(' '));
+     
+     var k = ('1, bas, 7')
+     console.log(k.split(','))
+
+     //trim - syntax - arr.trim();
+     var r = '       hello world         ';
+     console.log(r);
+     console.log(r.trim());
+
+     //string - syntax - string( );
+     var s = 45678;
+     console.log(s);
+     console.log(typeof s);
+     var t = string(s);
+     console.log(typeof String(s));
+
+
+
+
+
+
+
+ 
+</script>
+</body>
+</html>

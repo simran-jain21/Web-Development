@@ -1,0 +1,51 @@
+body{
+    height:100%;
+    width:100%;
+    margin:10px;
+    padding:0;
+    box-sizing:border-box;
+}
+.box{
+    height: 100%;
+    width: 306px;
+    margin: 100px auto;
+    background-color: #000000;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+input#row{
+    height: 50px;
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline:none;
+    font-size:35px;
+    color:#000000d1;
+    text-align:right;
+}
+div.box .row1,
+div.box .row2,
+div.box .row3,
+div.box .row4{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+div.box .row1 button,
+div.box .row2 button,
+div.box .row3 button,
+div.box .row4 button{
+    background-color: #ffffff;
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+    border:none;
+    font-size:30px;
+}
+div.box .row1 button.orange,
+div.box .row2 button.orange,
+div.box .row3 button.orange,
+div.box .row4 button.orange{
+    background-color:#ffa73b;
+}
+

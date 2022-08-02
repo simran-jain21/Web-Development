@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS LEC 4</title>
+</head>
+<body>
+    <script>
+            console.log('"hey, Simran here!"');         
+            console.log("'hey, Simran here!'");
+        //console.log(''hey, Simran here!'');                       //single quotes cannot be written inside single quotes
+            console.log('This is first \'paragraph\' ');                //use with slash to print quotes
+            console.log('This is second \\ slash paragraph ');
+            console.log('This is third $ paragraph ');
+            console.log('This is fourth $ paragraph with \n slash n ');
+            console.log('This is $ fifth paragraph with \t slash n ');      //t-tab (space)
+            document.write('MY name is simran &nbsp jain');                 //&nbsp
+
+        //////////////////////ARRAYS WITH METHODS/////////////////////////////////
+            var arr = ['string', 345 ,{name:'simran',email:'simranrjain@gmail.com'} ,true];
+            console.log(arr);
+            console.log(typeof arr);
+
+        //LENGTH - SYNTAX - arr.length
+            console.log(arr);
+            console.log("length:",arr.length);
+
+        //MULTIDIMENSIONAL ARRAY
+            var arr2 = [
+                [1,2,3],[6,7,8,9],[5,6,7,8,9]
+            ];
+            console.log(arr2);
+
+        //Array.isArray - syntax - Array.isArray(arr)
+            var a = 7236732682;
+            console.log(Array.isArray(arr2));
+            console.log(Array.isArray(a));
+
+        //toString() - syntax -arr.toString()
+            var arr2 = [
+                    [1,2,3],[6,7,8,9],[5,6,7,8,9]
+                ];
+            var x = arr2.toString();
+            console.log(x);
+            console.log(typeof x);
+
+        //join() - syntax - arr.join('')
+            var arr3 = ['apple','mango','jamun','melon'];
+            console.log(arr3.join());
+            console.log(arr3.join(',-'));
+            console.log(typeof arr3);
+            console.log(arr3.join(' '));
+
+        //pop() - syntax - arr.pop() ->removes last element
+        var arr3 = ['apple','mango','jamun','melon'];
+            console.log(arr3.pop());
+            //console.log(arr3.pop(mango));                   //doesn't work; cannot pass anything inside the brackets
+            console.log(arr3)
+
+        //push() - syntax - arr.push('');  ->adds element at last
+            var arr3 = ['apple','mango','jamun','melon'];
+            arr3.push('cherry');
+            console.log(arr3);
+            arr3.push('[3,4,5]','Simran');
+            console.log(arr3);
+            arr3.push('jain');
+            console.log(arr3);
+
+        //unshift() - syntax - arr.unshift(''); -> adds element at start
+            arr3.unshift('hieee');
+            console.log(arr3);
+            arr3.unshift('Miss','234');
+            console.log(arr3);
+
+        //shift() - syntax - arr.shift(''); -> removes element at start
+            arr3.shift();
+            console.log(arr3);
+
+        //access value from arr
+            var arr4 = ['hello','$',[4,5,6],'bye'];
+            console.log(arr4);
+            console.log(arr4[2]);
+            console.log(arr4[2][1]);
+
+        //delete - syntax - delete arr[index];          //only deletes the value not index
+            var arr5 = ['apple','mango','cherry','strawberry'];
+            console.log(arr5);
+            delete arr5[2];
+            console.log(arr5);
+
+        //splice - syntax - arr.splice(start,count,value1,value2,...,valueN)
+        //start-position ,count- number of items to be deleted, value- adds values at the required position with count
+            var arr6 = ['musk','banana','cherry','strawberry','blueberry','blackberry'];
+            console.log(arr6);
+            //arr6.splice(2);
+            //console.log(arr6);
+            //arr6.splice(2,1);
+            //console.log(arr6);
+            //arr6.splice(2,0,'name','1');
+            //console.log(arr6);
+            arr6.splice(2,1,'name','1');
+            console.log(arr6);
+
+        //slice - syntax - arr.slice(start,count) 
+        //start-position ,count- number of items to be selected
+            var arr7 = ['Simran','tejasvi','sagar','swapnil','harsh'];
+            console.log(arr7);
+            var store = arr7.slice(0,2);
+            console.log(store);
+
+        //sort - syntax arr.sort()
+            var arr8 = ['tejasvi','sagar','swapnil','simran','reena'];
+            console.log(arr8);
+            arr8.sort();
+            console.log(arr8);
+
+            var arr10 = [1 ,5 ,4 ,11];
+            console.log(arr10);
+            arr10.sort();
+            console.log(arr10);
+
+        //sort - syntax arr.reverse()
+            var arr9 = ['audi','bmw','mercedes','zantro','maruti'];
+            console.log(arr9);
+            // arr9.reverse();
+            // console.log(arr9);
+            arr9.sort().reverse();
+            console.log(arr9);
+
+
+    </script>
+
+</body>
+</html>

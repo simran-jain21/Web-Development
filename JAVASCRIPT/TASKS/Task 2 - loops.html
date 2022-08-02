@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2-loops</title>
+</head>
+<body>
+    <script>
+        // Ques1:- Sum of array value using loop
+        //     input - [2,4,5] // output 11
+
+        var arr = [ 2 ,4 ,5 ];
+            var sum = 0;
+            var i;
+                for(i = 0; i < arr.length; i++){
+                    sum = sum + arr[i];
+                }
+            console.log('Task 1:-   Sum of Array = ', sum);
+
+console.log('==================================================================================================');
+
+        // Ques2:- Find the largest number in array using loop & math method
+        //         input - [3,5,255,6,5,6] // output - 255
+
+            var arr1 = [3,5,255,6,5,6];
+            var res = arr1[0];
+            var i;
+            for(i = 0;i < arr1.length ; i++){
+                res = Math.max(res,arr1[i]);
+            }
+            console.log('Task 2:-   highest number = ',res);
+        
+console.log('==================================================================================================');
+
+        // Ques3:- Writer a program to check whether a number is perfect or not
+        //     Example : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, 
+        //     and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors:
+        //     ( 1 + 2 + 3 + 6 ) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14.
+            
+            function is_perfect(num){
+                var i, sum = 0;
+                for(i = 1; i <= num/2; i++){
+                    if(num % i == 0){
+                        sum = sum + i;
+                    }
+                }
+                if(num == sum){
+                    console.log(sum, ' is a perfect number');
+                }else{
+                    console.log(num, ' is not a perfect number');
+                }
+            }
+
+            var res = is_perfect(28);
+
+            
+            
+console.log('==================================================================================================');
+
+        // Ques4:- Write a program to find perfect numbers between 1 to 100
+
+        for(n = 1; n <= 100; n++){
+            var i,n, sum=0;
+            for(i = 1; i <= n/2; i++){
+                if(n % i == 0){
+                    sum = sum + i;
+                }
+            }
+            if(n == sum){
+                console.log('Task 4:-   ',sum, ' is a perfect number');
+            }else{
+                console.log('Task 4:-   ',n, ' is not a perfect number');
+            }
+        }
+        
+
+
+console.log('==================================================================================================');
+        
+        // Ques5:- Write a program to check whether a number is prime or not.
+        //     A prime number is a positive integer that is only divisible by 1 and itself. 
+        //     For example, 2, 3, 5, 7, 11 are the first few prime numbers.
+
+            
+            function check_prime(num){
+                var flag = 0;
+                for(var i=2 ; i < num ; i++){
+                    if(num % i == 0){
+                        flag++;
+                    }
+                }if( flag == 0){
+                    console.log('Task 5:-   prime number');
+                }else{
+                console.log('Task 5:-   not a prime number');
+                }
+            }
+            check_prime(41);
+
+console.log('==================================================================================================');
+
+        // Ques6:-  Write a program to find prime numbers between 1 to 100
+
+            // var i;
+            // var num;
+            // var res;
+            
+
+            function numbers(){
+               for(num = 2 ; num <= 100;num++){
+                   is_prime(num);
+               }
+               
+           }
+
+            function is_prime(num){
+                var flag = 0;
+                for(i=2 ; i < num ; i++){
+                    if(num % i == 0){
+                        flag++;
+                    }
+                }
+
+                if( flag == 0){
+                    console.log('Task 6:-   ', num);
+                }
+            }
+
+            numbers();
+
+            console.log('======================================');
+            var n,i;
+            
+            for(n = 2 ; n <= 100 ; n++ ){
+                var flag = 0;
+                for(i = 2; i < n ; i++){
+                    if(n % i == 0){
+                        flag++;
+                    }
+                }
+                if(flag == 0){
+                    console.log('Task 6:-   ',n,' is a prime number');
+                }else{
+                    console.log('Task 6:-   ',n,' is not a prime number')
+                }
+            }
+
+           
+console.log('==================================================================================================');
+
+        // Ques7:- Write a program to find sum of digit using loop	
+        //     Input - 2342 // output - 11
+
+            var sum = 0;
+            var digit;
+            function SOD(num){
+                while(num != 0){
+                    digit = num % 10;
+                    num = num / 10;
+                    sum = sum + digit;
+                }
+                return parseInt(sum);
+            }
+            var res = SOD(234);
+            console.log('Task 7:-   ',res);
+        
+console.log('==================================================================================================');
+        // Ques8:- Write a program to check whether number is Palindrome or not 
+        //     A number is a palindrome if it is read the same from forward or backward. For example 12321
+            
+        var a = 12321;
+        var tmp = a;
+        var result = 0;
+        while(a > 0){
+            d = a % 10;
+            a = parseInt(a/10);
+            result = result * 10 + d;
+        }
+        if(result == tmp){
+            console.log('Task 8:-   '+result+ ' is a palindrome number');
+        }else{
+            console.log('Task 8:-   '+result+ ' is not a palindrome number');
+        }
+
+        //using a string
+        var a = 'madam';
+        var s = a.split('');
+        console.log(s);
+        var t = s.reverse();
+        console.log(t);
+        var x = t.join('');
+        if(a == x){
+            console.log(a+' & '+x+ ' are palindrome ');
+        }else{
+            console.log(a+' & '+x+ ' are not palindrome ');
+        }
+
+console.log('===============================')
+        var str = '';
+        var a = 'king';
+        var s = a.split('');
+        console.log(s);
+        for(i = s.length - 1 ; i >= 0 ; i--){
+            str = str + s[i];
+            // console.log(str);
+        }
+        console.log(str);
+        
+
+            
+console.log('==================================================================================================');
+
+
+        // Ques9:- Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" 
+        //     instead of the number and for the multiples of five print "Buzz". 
+        //     For numbers which are multiples of both three and five print "FizzBuzz". 
+
+            for(n = 1 ; n <= 100 ; n++){
+                if(n % 3 == 0 && n % 5 == 0){
+                    console.log('Task 9:-   ',n,' FizzBuzz')
+                }else if(n % 5 == 0 ){
+                    console.log('Task 9:-   ',n,' Buzz')
+                }else if( n % 3 == 0 ){
+                    console.log('Task 9:-   ',n ,' Fizz')
+                }
+            }
+            
+console.log('==================================================================================================');
+
+        // Ques10:- Given two arrays of integers. Add up each element in the same position and
+        //     create a new array containing the sum of each pair. Assume both arrays are of the same length.
+        //     var a = [1,2,3,4];
+        //     var b = [2,4,5,7];
+        //     //Expected output
+        //     [3,6,8,11]
+
+        var sum = [];
+        function sum_array(a,b){
+            for(i = 0; i < Math.max(a.length,b.length) ;i++){
+                sum.push(a[i] + b[i]);
+            }
+            return sum;
+        }
+
+        var result = sum_array([1,2,3,4],[2,4,5,7])
+        console.log('Task 10:-  ',result);
+
+console.log('==================================================================================================');
+        // Ques11:- Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+        //     var 4;
+        //     //Expected output
+        //     1+2+3+4 = 10
+
+            var num,i;
+            sum = 0;
+            
+            function check_add(num){
+                if(num > 0){
+                    for(i = 1; i <= num ;i++){
+                        sum = sum + i;
+                    }
+                    return sum;
+                }
+            }
+
+            var res = check_add(4);
+            console.log('Task 11:-  ', res);
+
+console.log('==================================================================================================');
+
+
+        // Ques12:- Write a program to find the power of a number using a for loop. 
+        //     Function numPower() to return power of number for provided exponential value using for loop.
+        //     numPower(2,3) 
+        //     // 2*2*2 //Expected output - 8
+
+            var i, res = 1;
+
+            function numPower(num, pow) {
+                for (i = 1; i <= pow; i++) {
+                    res = res * num;
+                }
+                return res;
+            }
+
+            var sol = numPower(2,3);
+            console.log('Task 12:-  ',sol);
+ 
+
+        
+    </script>
+</body>
+</html>

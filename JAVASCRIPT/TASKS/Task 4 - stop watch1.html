@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop watch</title>
+</head>
+<style>
+    .main{
+        display:flex;
+        font-size:50px;
+    }
+</style>
+<body>
+    <h1>Simple Stopwatch</h1>
+
+    <div class="main">
+        <div id="hours">00</div>:
+        <div id="mins">00</div>:
+        <div id="secs">00</div>:
+        <div id="ms">00</div>
+    </div>
+    
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+    <button id="reset">RESET</button>
+    <script>
+
+        var starter = document.getElementById('start');
+        var ms=0;
+        var second = 0;
+        var minutes = 0;
+        var hoursss = 0
+        var store;
+        starter.addEventListener('click',function(){
+            store = setInterval(function() { 
+                ms++; 
+                document.getElementById('ms').innerHTML = ms;
+                if(ms > 99 ){
+                    ms = 0;
+                    second++;
+                    document.getElementById('secs').innerHTML = (second < 10 )?'0'+second:second;;
+                    if(second > 59){
+                        second = 0;
+                        minutes++;
+                        document.getElementById('mins').innerHTML = (minutes < 10 )?'0'+minutes:minutes;
+                        if(minutes > 59){
+                            minutes = 0; 
+                            hoursss++;
+                            document.getElementById('hours').innerHTML =(hoursss < 10)?'0'+hoursss:hoursss;
+                        }
+                    }
+                }
+            }, 1);
+        })
+
+        var stop = document.getElementById('stop');
+        stop.addEventListener('click',function(){
+            clearInterval(store);
+        })
+
+        var reset = document.getElementById('reset');
+        reset.addEventListener('click',function(){
+            document.getElementById('mins').innerHTML = 0;
+            document.getElementById('secs').innerHTML = 0;
+            document.getElementById('ms').innerHTML = 0;
+            document.getElementById('hours').innerHTML = 0;
+            
+            ms=0;
+            second = 0;
+            minutes = 0;
+            hoursss = 0;
+
+        })
+
+        
+    </script>
+</body>
+</html>

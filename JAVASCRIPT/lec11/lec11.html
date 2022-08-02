@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ques1:- Write a program to print * in a loop
+        // *
+        // * *
+        // * * *
+        // * * * *
+        // * * * * *
+        document.write('==========Task 1==========','<br>');
+
+        for(var i = 1;i <= 5; i++){
+            for (var j = 1 ; j <= i;j++){
+                document.write('* ');
+            }
+            document.write('<br>');
+        }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Ques2:- Write a program to print * in a loop
+
+        // * * * * *
+        // * * * *
+        // * * *
+        // * *
+        // *
+        document.write('==========Task 2==========','<br>');
+
+        for(var i = 1 ; i <= 5; i++){
+            for(var j = i ; j <= 5 ;j++){
+                document.write('* ');
+            } 
+            document.write(' ','<br>');
+        }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Ques3:- Write a program to print * in a loop
+        //      *
+        //     * *
+        //    * * *
+        //   * * * *
+        //  * * * * *
+        document.write('==========Task 3==========','<br>');
+
+
+        for(var i = 1;i <= 5; i++){
+            for(var j = 4 ; j >= i ;j--){
+                document.write('&nbsp');
+            }
+            for(var k = 1; k <= i;k++){
+                document.write('*')
+            }
+            document.write('<br>');
+        }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Ques4:- Write a program to print * in a loop
+        
+        // tables from 2 to 10
+
+        document.write('==========Task 4 ==========','<br>');
+
+        for(i = 2; i <= 10 ; i++){
+            for(j = 1;j <=10 ;j++){
+                document.write(i+' * '+j+' = '+ i*j);
+                document.write('<br>');
+            }
+            document.write('<br>');
+        }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Ques5:- Write a program to print * in a loop
+        
+        // 1
+        // 2 3
+        // 4 5 6
+        // 7 8 9 10
+
+        document.write('==========Task 5 ==========','<br>');
+
+        var temp=1;
+        for(i = 1;i <= 4; i++){
+            for(j = 1; j<= i;j++){
+                document.write(temp,'&nbsp');
+                temp++
+            }
+            document.write('<br>');
+        }
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Ques6:- Write a program to print * in a loop
+        
+        // 1
+        // 2 2
+        // 3 3 3
+        // 4 4 4 4
+        // 5 5 5 5 5
+
+        document.write('==========Task 6 ==========','<br>');
+
+
+        for(i = 1;i <= 5; i++){
+            for(j = 0; j < i ;j++){
+                document.write(i);
+            }
+            
+            document.write('&nbsp','<br>');
+        }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Ques7:- Write a program to print * in a loop
+        
+        // 1
+        // 1 2
+        // 1 2 1
+        // 1 2 1 2 
+        // 1 2 1 2 1
+
+        document.write('==========Task 7 ==========','<br>');
+
+        
+        for(i = 1; i <= 5 ;i++){
+            for(j = 1; j <= i ; j++){
+                if( j % 2 != 0){
+                    document.write('1');
+                }else{
+                    document.write('2');
+                }
+                
+            }
+            document.write('<br>');
+        }
+
+
+    </script>
+</body>
+</html>

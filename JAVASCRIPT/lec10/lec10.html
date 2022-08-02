@@ -1,0 +1,173 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec10</title>
+</head>
+<body>
+    <script>
+    //Switch case
+    // switch (key) {
+    //     case value:
+    //         statements;
+    //         break;
+    //         statements;
+    //     default:
+    //         break;
+    // }
+
+        var day = 3;
+        switch(day){
+            case 1:
+                console.log('Mon');
+                break;
+            case 2:
+                console.log('Tues');
+                break;
+            case 3:
+                console.log('Wed');
+                break;
+            case 4:
+                console.log('thurs');
+                break;
+            default:
+            console.log('Happy day');
+        }
+
+        console.log( '==================================================================')
+    //Calculator
+
+        function cal(a , op , b){
+            switch(op){
+                case '+':
+                    result = a + b;
+                    break;
+                case '-':
+                    result = a - b;
+                    break;
+                case '*':
+                    result = a * b;
+                    break;
+                case '/':
+                    result = a / b;
+                    break;
+                case '%':
+                    result = a % b;
+                    break;
+                default:
+                    result = 'please enter a valid operator';
+            }
+            return result;
+        }
+        console.log('Cal ans= ',cal(10 , '$' , 2));
+       
+ console.log( '=======================================================================')
+
+    //LOOPS
+    // for loop
+        // for(initialization, condition,increment/decrement){
+        //     statements;
+        // }
+        var i;
+        for(i = 1; i <= 20 ; i++){
+            if(i % 2 == 0){
+                console.log(i ,' is a even number');
+            }else{
+                console.log(i, ' is a odd number');
+            }
+        }   
+        
+console.log( '============================================================================')
+
+    //with array
+        
+        var arr = [2, 6 ,'simran' , 'jain' , 30 , 'tejasvi', 50];
+        var i;
+        for(i = 0 ; i < arr.length; i++){
+            console.log(arr[i]);
+        }
+
+console.log( '==============================================================================')
+
+        var arr1 = [
+            {name:'simmi', email:'simran@gmail.com', gender:'F'},
+            {name:'teju', email:'teju@gmail.com', gender:'F'},
+            {name:'sagar', email:'sagar@gmail.com', gender:'M'}
+            ]
+        console.log(arr1);
+        for(var i = 0 ;i < arr1.length ; i++){
+            var res = arr1[i]
+            console.log('my name is '+res.name+' and email is '+res.email+'<br>');
+            document.write('<h4> my name is '+res.name+' and email is '+res.email+'</h4><br>');
+        }
+
+console.log( '==============================================================================')
+
+    //while loop
+    // while (condition) {
+        // statment
+    // }
+
+        var i = 1;
+        while(i < 20){
+            console.log(i);
+            i++;
+        }
+
+        var arr2 = [
+                {name:'simmi', email:'simran@gmail.com', gender:'F'},
+                {name:'teju', email:'teju@gmail.com', gender:'F'},
+                {name:'sagar', email:'sagar@gmail.com', gender:'M'}
+                ]
+            console.log(arr2);
+            var i = 0;
+            while(i<arr2.length){
+                console.log(arr2[i]);
+                i++;
+            }
+
+console.log( '==============================================================================')
+    // do {
+    //     statements
+    // } while (condition);
+        var i = 0;
+        do {
+            console.log(i);
+            i++;
+        } while (i <= 20);
+
+        var n = 5;
+        var i = 1
+        do{
+            i = i * n;
+            console.log(n);
+            n--;
+        }while(n != 0);
+        console.log(i);
+
+console.log( '==============================================================================')
+// TASK 1
+    var arr = [10,20,40,30,50,90,6];
+    var i ;
+    var res = 0;
+    for(i = 0; i<arr.length; i++){
+        res = res+ arr[i];
+    }
+    console.log(res);
+
+console.log( '======================================================')
+    // TASK 2
+
+    var a = [10,20,40,30,50,90,6];
+    var i,result;
+    res = a[0];
+    for(i = 0; i<arr.length;i++){
+       res =  Math.max(res,a[i]);
+    }
+    console.log(res);
+
+</script> 
+</body>
+</html>

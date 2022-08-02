@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 11 - BMI</title>
+    <link rel="stylesheet" href="Task 11.css" />
+  </head>
+    <body>
+        <div class="content">
+          <div class="input-grp">
+            <div class="grp1">
+              <label>Weight</label>
+              <input type="number" name="weight" id="weight" placeholder="in kgs"> <br><br>
+            </div>
+            <div class="grp1">
+              <label>Height</label>
+              <input type="number" name="height" id="height" placeholder="in mts" > <br> <br>
+          </div>
+        </div>
+
+          <button type="submit" id="cal_bmi">Calculate BMI</button>
+
+          <div id="output">
+
+          </div>
+        </div>
+  
+    </body>
+
+    <script>
+
+        var result;
+
+        var calculate = document.getElementById('cal_bmi');
+        calculate.addEventListener('click', function(){
+          var wt = document.getElementById('weight').value;
+          var ht = document.getElementById('height').value; 
+          result = wt / Math.pow(ht,2);
+          result = result.toFixed(2);
+
+        if(result < 18.5){
+            document.getElementById('output').innerHTML = 'BMI is '+result+' which is Underweight';
+        }else if(result >= 18.5 && result <= 24.9){
+            document.getElementById('output').innerHTML = 'BMI is '+result+' which is Normal Weight';
+        }else if(result >= 25 && result <= 29.9){
+            document.getElementById('output').innerHTML = 'BMI is '+result+' which is over weight';
+        }else if(result >= 30 && result <= 34.9){
+            document.getElementById('output').innerHTML = 'BMI is '+result+' which is obese class 1';
+        }else if(result >= 35 && result <= 39.9){
+            document.getElementById('output').innerHTML = 'BMI is '+result+' which is obese class 2';
+        }else if(result >= 40){
+            document.getElementById('output').innerHTML = 'BMI is '+result+' which is obese class 3';
+        }
+        })
+
+        
+
+    </script>
+
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>To-do list</title>
+</head>
+<style>
+    .innertext{
+        padding-right:20px;
+    }
+</style>
+<body>
+    <input type="text" id="in">
+    <button id="btn">ADD</button>
+
+    <ul class="listing" id="list">
+        
+    </ul>
+
+    <script>
+        var x = 0;
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(){
+            var read = document.getElementById('in');
+            var temp = x++;
+            if(read.value == ""){
+
+            }else{
+                var removal = document.getElementById('list').innerHTML += '<li class="text'+temp+'"><span class="innertext" >'+read.value+'</span><button onclick="myFunc('+temp+')"><i class="fas fa-times" ></i></button> </li>';
+                read.value = '';
+            }
+        })
+        function myFunc(e){
+           var clear = document.querySelector('.text'+e);
+           console.log(clear);
+           clear.remove();
+        }
+    </script>
+</body>
+</html>

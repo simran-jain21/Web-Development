@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myFunc(this)"> Click me</button>
+
+    <button id="btn">
+        <h1>click me1</h1>
+    </button>
+    <!-- <button id="btn">click me2</button> -->
+    <div class="container">
+        <div class="div-class first">
+            <h1>First, Hello World</h1>
+        </div>
+        <div class="div-class second">
+            <div>Second, Hello World</div>
+        </div>
+        <div class="div-class third">
+            <p>Third, Hello </p>
+        </div>
+    </div>
+
+    <div id = 'paragraph'>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+    </div>
+
+    <p>First Name: <input name="fname" type="text" value="Michael"></p>
+    <p>First Name: <input name="fname" type="text" value="Doug"></p>
+
+    <hr>
+    <button id="newBtn">Click Btn</button>
+    <div id="rBox">
+        Hello
+    </div>
+    <script>
+        function myFunc(simran) {
+
+            console.log('hello')
+            // console.log(simran)
+            btn.removeEventListener('click', myFunc)
+        }
+
+        var btn = document.getElementById('btn');
+        // console.log(btn)
+        btn.addEventListener('click', myFunc);
+
+        // btn.addEventListener('click',function(){
+        //     console.log(1);
+        //     btn.removeEventListener('click',function(){
+        //         console.log('k')
+        //     })
+        // })
+        btn.addEventListener('dblclick', function () {
+            console.log('Double click');
+            console.log(btn.innerHTML);
+            console.log(btn.innerText)
+        })
+
+        // selector
+
+        var para = document.getElementsByClassName('div-class');
+        console.log(para[0].innerHTML);
+
+        // var store = document.getElementsByClassName('container');
+        // console.log(store[0].innerHTML);
+
+
+        var arr = [2345, 456, 46546, 7567, 56756];
+        console.log(arr);
+        // console.log(arr[0]);
+        for(i = 0; i < para.length; i++){
+            console.log(para[i].innerText);
+        }
+
+
+        //tag selector
+        var para = document.getElementById('paragraph')
+        var tag = para.getElementsByTagName('p');
+        console.log(tag);
+
+        //name selector
+        var sname = document.getElementsByName('fname');
+        console.log(sname);
+        console.log(sname[0]);
+        console.log(sname[0].value);
+
+        var btn = document.querySelector('#btn')
+        var cls = document.querySelector('.div-class.second')
+        
+        console.log(btn)
+        console.log(cls)
+
+        var newBtn = document.getElementById('newBtn');
+        newBtn.addEventListener('click',function(){
+            var store = document.getElementById('rBox');
+            
+            console.log(store.innerHTML = 'bye bye...!!');
+        });
+
+        
+
+    </script>
+</body>
+
+</html>

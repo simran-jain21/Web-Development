@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task 8.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/action_page.php" method="post" id="submit" onsubmit="return submitForm()">
+        <div class="input-grp">
+            <label>User Name</label><br>
+            <input type="text" label="input" name="username" id="username" class="fields">
+            <p id="err1" class="red"></p>
+        </div>
+        <div class="input-grp">
+            <label>Email id</label><br>
+            <input type="text" label="input" name="emailid" id="emailid" class="fields">
+            <p id="err2" class="red"></p>
+        </div>
+        <div class="input-grp">
+            <label>Password</label><br>
+            <input type="password" label="input" name="password" id="password" class="fields">
+            <p id="err3" class="red"></p>
+        </div>
+        <div class="input-grp">
+            <label>Contact</label><br>
+            <input type="number" label="input" name="number" id="contact" class="fields">
+            <p id="err4" class="red"></p>
+        </div>
+        <div class="input-grp">
+            <label><input type="radio" name="gender" id="genderM" label="select" class="fields" value="Male">Male</label>
+            <label><input type="radio" name="gender" id="genderF" class="select" value="Female">Female</label>
+            <p id="err5" class="red"></p> 
+        </div>
+        <div class="input-grp">
+            <select name="state" id="state" label="select" onchange="selectcity()">
+                <option value="" >Select State</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="RJ">Rajasthan</option>
+            </select> <br><br>
+            <p id="err6" class="red"></p>
+        </div>
+
+
+
+        <div class="input-grp" id="output">
+            <select name="city" id="city">
+                <option value="">Select City</option> 
+            </select>
+        </div>
+        <br>
+
+        <textarea name="mess" id="messbox" label="input" cols="30" rows="10"></textarea><br>
+
+        <button type="submit" id="">Submit</button>
+
+        </form>
+
+        <script>
+
+            function selectcity(){
+                var read = document.getElementById('state').value;
+                console.log(read);
+
+                if(read == 'MH'){
+                    var cities = ["Mumbai" ,"Pune" ,"Aurangabad"];
+                }else if( read == 'MP'){
+                    var cities = ["Indore", "Jabalpur", "Bhopal"];
+                }else if(read == 'RJ'){
+                    var cities = ['Surat','Ahmedabad','Rajkot'];
+                }
+
+                var display = "<option selected disabled> select city</option>";
+                for(i=0; i<cities.length; i++){
+                    // display = cities[i];
+                    display += '<option>'+cities[i]+'</option>';
+                }
+                    document.getElementById('city').innerHTML = display;
+            }
+
+
+             function submitForm(){
+                var username = document.getElementById('username').value;
+                var emailid = document.getElementById('emailid').value;
+                var password = document.getElementById('password').value;
+                var contact = document.getElementById('contact').value;
+
+                var markedM = document.getElementById('genderM');
+                var markedF = document.getElementById('genderF');
+                var state_error = document.getElementById('state');
+
+                var err1 = document.getElementById('err1');
+                var err2 = document.getElementById('err2');
+                var err3 = document.getElementById('err3');
+                var err4 = document.getElementById('err4');
+                var err5 = document.getElementById('err5');
+                var err6 = document.getElementById('err6');
+                
+                var flag = 0;
+                if(username == ''){
+                    err1.innerText = 'username is required';
+                }else{
+                    err1.innerText = '';
+                    flag++;
+                }
+
+                if(emailid == ''){
+                    err2.innerText = 'emailid is required';
+                }else{
+                    err2.innerText = '';
+                    flag++;
+                }
+
+                if(password == ''){
+                    err3.innerText = 'password is required';
+                }else{
+                    err3.innerText = '';
+                    flag++;
+                }
+
+                if(contact == ''){
+                    err4.innerText = 'contact is required';
+                }else{
+                    err4.innerText = '';
+                    flag++;
+                }
+            
+                if(markedM.checked == false && markedF.checked == false){
+                    document.getElementById('err5').innerHTML = 'Gender is required';
+                }else{
+                    err5.innerText = '';
+                    flag++;
+                }
+
+                if(state_error.value == ''){
+                    err6.innerText = 'Selection of State is required';
+                }else{
+                    err6.innerText = '';
+                    flag++;
+                }
+
+                if(flag == 1){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            
+            
+            
+
+        </script>
+
+        
+    
+
+</body>
+</html>

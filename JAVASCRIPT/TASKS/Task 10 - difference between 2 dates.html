@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 10</title>
+</head>
+<body>
+    
+    <label>Enter date1</label>
+    <input type="date" name="date1" id="date1" > <br> <br>
+    <label>Enter date2</label>
+    <input type="date" name="date2" id="date2"><br> <br>
+
+    <button id="btn">Calculate</button>
+    
+    <p id="output">
+
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(){
+            var start = document.getElementById('date1').value;
+            var end = document.getElementById('date2').value;
+            date1 = new Date(start);
+            date2 = new Date(end);
+
+            var date11 = date1.getFullYear();
+            var feb = ((date11 % 4 == 0 && date11 % 100 != 0) || date11 % 400 == 0)?29:28;
+            var arr = [31,feb,31,30,31,30,31,31,30,31,30,31];
+            
+            var year = date2.getFullYear()-date1.getFullYear();
+            var month = date2.getMonth()-date1.getMonth();
+            var days = date2.getDate()-date1.getDate();
+            if(month < 0){
+                year--;
+                month+=12;
+            }
+            if(days < 0){
+                if(month > 0){
+                    month--;
+                }else{
+                    year--;
+                    month = 11;
+                }
+                days+=arr[date1.getMonth()];
+
+            }
+
+            document.getElementById('output').innerHTML = year+' years '+month+' months '+days+' days'
+
+        })
+
+        // var btn = document.getElementById('btn');
+        // btn.addEventListener('click',function(){
+        //     var date1 = document.getElementById('date1').value;
+        //     var date2 = document.getElementById('date2').value;
+
+        //     date1 = new Date(date1);
+        //     var a = date1.getFullYear();
+        //     var b = date1.getMonth();
+        //     var e = date1.getDate();
+
+        //     date2 = new Date(date2);
+        //     var c = date2.getFullYear();
+        //     var d = date2.getMonth();
+        //     var f = date2.getDate();
+
+        //     var years = a - c ;
+        //     var months = b - d;
+        //     var days = e - f;
+        //     document.getElementById('output').innerHTML = Math.abs(years)+' years '+Math.abs(months)+' months '+Math.abs(days)+' days';
+            
+        // })
+    </script>
+</body>
+</html>

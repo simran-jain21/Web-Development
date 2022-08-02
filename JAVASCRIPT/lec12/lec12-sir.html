@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY10-Events</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border:1px solid #000;
+
+        }
+        .box1{
+            height: 1000px;
+        }
+    </style>
+</head>
+<body onload="onLoadFun()" onscroll="onScrollFun()">
+    <button class="box" onclick="onClickFunc()">On Click</button>
+    <button class="box" ondblclick="onDblClickFunc()">On Double Click</button>
+    <button class="box" onmouseenter="onMouseEnterFunc()">On Mouse Enter</button>
+    <button class="box"  onmouseout="onMouseOutFunc()">On Mouse Out</button>
+    <button class="box"  onmouseover="onMouseOverFunc()">On Mouse Over</button>
+    <button class="box"  onmouseleave="onMouseLeaveFunc()">On Mouse Over</button>
+    <button class="box"  onmousemove="onMouseMoveFunc()">On Mouse Move</button>
+    <button class="box"  onmouseup="onMouseUpFunc()">On Mouse Up</button>
+    <button class="box"  onmousedown="onMouseDownFunc()">On Mouse Down</button>
+    <input type="text"  onkeydown="onKeyDownFunc()" placeholder="on key down">
+    <input type="text"  onkeyup="onKeyUpFunc()" placeholder="on key up">
+    <input type="text"  onkeypress="onKeyPress()" placeholder="on key press">
+    <input type="text"  onfocus="onFocusFunc()" placeholder="on focus ">
+    <input type="text"  onblur="onBlurFunc()" placeholder="on blur ">
+    <select name="" onchange="onChangeFunc()" id="">
+        <option value="">On Change Event</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+    </select>
+
+    <input type="radio"  onchange="onChangeFunc()" name="abc" id="">first
+    <input type="radio"  onchange="onChangeFunc()" name="abc" id="">second
+    
+    <input type="text" oninput="onInputFunc()" placeholder="on input">
+    <input type="text" oninvalid="onInvalidFunc()" placeholder="on invalid">
+    <input type="text" onselect="onSelectFunc()" placeholder="on select event">
+    <p onselect="onSelectFunc()">Hello world</p>
+    <!-- <div class="box1"></div> -->
+    <input type="text" oncopy="onCopyFunc()" placeholder="on copy event">
+    <input type="text" oncut="onCutFunc()" placeholder="on cut event">
+    <input type="text" onpaste="onPasteEvent()" placeholder="on paste event">
+    <form action="" onsubmit="onSubmitFunc()">
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form>
+    <button class="box" ondblclick="onDblClickFunc()">On Double Click</button>
+
+    <script>
+        function onClickFunc(){
+            console.log('click event')
+            // window.location.href = 'https://www.google.com'
+            console.log(window);
+        }
+
+        function onDblClickFunc(){
+            console.log('double click event')
+        }
+
+        function onMouseEnterFunc(){
+            console.log('mouse enter event')
+        }
+
+     
+        function onMouseOutFunc(){
+            console.log('mouse out event')
+        }
+
+
+        function onMouseOverFunc(){
+            console.log('mouse over event')
+        }
+        function onMouseLeaveFunc(){
+            console.log('mouse leave event')
+        }
+        function onMouseMoveFunc(){
+            console.log('mouse move event')
+        }
+        function onMouseUpFunc(){
+            console.log('mouse up event')
+        }
+        function onMouseDownFunc(){
+            console.log('mouse down event')
+        }
+        function onKeyDownFunc(){
+            console.log('on key down event')
+        }
+        function onKeyUpFunc(){
+            console.log('on key up event')
+        }
+        function onKeyPress(){
+            console.log('on key press event')
+        }
+        function onFocusFunc(){
+            console.log('on focus event')
+        }
+        function onBlurFunc(){
+            console.log('on blur event')
+        }
+
+        function onLoadFun(){
+            console.log('on load event')
+        }
+        function onScrollFun(){
+            console.log('on scroll event')
+        }
+        function onChangeFunc(){
+            console.log('on change event')
+        }
+        function onInputFunc(){
+            console.log('on change event')
+        }
+        function onInvalidFunc(){
+            console.log('on invalid event')
+        }
+        function onSelectFunc(){
+            console.log('on select event')
+        }
+        function onCopyFunc(){
+            console.log('on copy event')
+        }
+        function onCutFunc(){
+            console.log('on cut event')
+        }
+        function onPasteEvent(){
+            console.log('on paste event')
+        }
+        function onSubmitFunc(){
+            console.log('on submit event')
+        }
+    </script>
+</body>
+</html>

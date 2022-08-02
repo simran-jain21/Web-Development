@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn">
+        click me...!!
+    </button>
+    <div id="box">
+        <p> hey there..!!</p>
+    </div>
+    
+    <input type="number" id="num1" value="" placeholder="0">
+    <input type="text" id="op" value="" placeholder="+">
+    <input type="number" id="num2" value="" placeholder="0">
+
+    <button id = "calculate">
+        Calculate
+    </button>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var rbox = document.querySelector('#box');
+        btn.addEventListener('click', function () {
+            console.log(rbox.innerHTML);                        //getter
+            console.log(rbox.innerText);
+            rbox.innerHTML += '<p>welcome home</p>';            //setter
+
+        })
+
+        
+        var button = document.getElementById('calculate');
+        button.addEventListener('click',function(){
+            var input1 = document.getElementById('num1').value;
+            console.log(input1);
+            var input2 = document.getElementById('op').value;
+            console.log(input2);
+            var input3 = document.getElementById('num2').value;
+            console.log(input3);
+            var result = 0;
+            switch(input2){
+                case '+':
+                    result = Number(input1) + Number(input3);
+                    break;
+                case '-':
+                    result = Number(input1) - Number(input3);
+                    break;
+                case '*':
+                    result = Number(input1) * Number(input3);
+                    break;
+                case '/':
+                    result = Number(input1) / Number(input3);
+                    break;
+                default: 
+                    result = 'invalid operator';
+                    break;
+            }
+            console.log(result);
+        })
+    </script>
+</body>
+
+</html>

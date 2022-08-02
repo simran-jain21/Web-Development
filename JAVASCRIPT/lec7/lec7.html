@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec 7</title>
+</head>
+<body>
+    <script>
+        //task
+        var a = 'I am Simran';
+        ans = a.replace(/ /g,"_");
+        console.log(ans);
+
+        // var b = prompt("Enter value 1")         //if always to use number then use Number(prompt("Enter value 1"))
+        // value1 = Number(b);
+        // var c = prompt("Enter value 2")
+        // value2 = Number(c)
+        // console.log(Number (value1+value2   ));
+
+
+        //object
+        var obj = {name : 'Simran',age : 24, email : 'simranrjain@gmail.com', contact : 9867337749};
+        console.log(obj);
+        console.log(typeof(obj));
+        console.log(obj.name);
+        obj.password = '12345';
+        console.log(obj);
+        console.log(obj['email']);
+        obj.email = 'simran@gmail.com';
+        console.log(obj);
+
+        var obj = {name : 'Simran',age : 24, email : 'simranrjain@gmail.com', contact : 9867337749 ,arr : [1, 2, 3] };
+        console.log(obj.arr);
+        console.log(obj.arr[1]);
+
+        var obj = {name : 'Simran',age : 24, email : 'simranrjain@gmail.com', contact : 9867337749 ,
+                    sum : function(x,y){
+                        return x+y;
+                    } };
+        console.log(obj.sum(5,5));
+        
+        var obj = {name : 'Simran',age : 24, email : 'simranrjain@gmail.com', contact : 9867337749 ,
+                        sub : function(x,y){
+                            return x-y;
+                            } };
+        console.log(obj.sub(10,5));
+        
+        var obj = {name : 'Simran',age : 24, email : 'simranrjain@gmail.com', contact : 9867337749 ,
+                        mul : function(x,y){
+                            return x*y;
+                        },
+                        div : function(r,s){
+                            return r/s ;}
+                        }; 
+        console.log(obj.mul(10,5));
+        console.log(obj.div(10,5));
+
+        //conditions
+        // if(condition){
+        // 
+        // }
+
+        // var a = prompt('enter a value');
+        // if( a%2 == 0){
+        //     console.log('even');
+        // }
+        // else{
+        //     console.log('odd');
+        // }
+
+        // var a = prompt('enter a value');
+        // if( a > 0){
+        //     console.log('positive');
+        // }
+        // else{
+        //     console.log('negative');
+        // }
+
+        function cal(x,op,y){
+            if ( op == '+') {
+                return x + y;
+            } 
+            if ( op == '-'){
+                return x - y;
+            }
+            if ( op == '*'){
+                return x * y;
+            }
+            if ( op == '/'){
+                return x % y;
+            }
+        }
+        ans = cal(10,'-', 2);
+        console.log('ans = ' , ans);
+
+
+        function number(x){
+            if (!isNaN(x)){
+                return 'it is a number';
+            }
+            else{
+                return 'its is not a number';
+            }
+        }
+        result = number(2);
+        console.log(result);
+
+
+
+        function number(s){
+            console.log(typeof(s))
+            if (typeof(s) == 'number'){  //number == 'numbr'
+                return 'it is a number';
+            }
+            else{
+                return 'its not a number';
+            }
+        }
+        result = number('6');
+        console.log(result);
+
+    console.log('--------------------------------------------------------')
+
+        var a = 10;
+        var b = 20;
+        if( a > b){
+            console.log(b, ' is greater than ', a);
+        }
+        else{
+            console.log(b, ' is smaller than ', a);
+        }
+
+        var x = 50;
+        var y = 25;
+        var z = 150;
+        if( x > y){
+            if(x > z){
+                console.log('x = ', x);
+            }else{
+                console.log('z = ', z)
+            }
+        }else{
+            if(y > z){
+                console.log('y = ', y);
+            }else{
+                console.log('z = ', z);
+            }
+        }
+
+    </script>
+</body>
+</html>

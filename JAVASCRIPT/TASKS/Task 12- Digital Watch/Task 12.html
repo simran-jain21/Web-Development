@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12 - Digital clock</title>
+</head>
+<style>
+    .watch{
+        display:flex;
+        font-size:40px;
+        font-family:calibri;
+    }
+    #ap{
+        margin-left:10px;
+    }
+    .time{
+        font-size:18px;
+    }
+</style>
+<body>
+
+    <div class="watch">
+        <div id="hours">00:</div>
+        <div id="mins">00:</div>
+        <div id="sec">00</div>
+        <div id="ap"></div>
+    </div>
+    <div class="time">
+        <div id="day"></div>
+    </div>
+
+
+    <script>
+
+        setInterval(function(){
+            var date = new Date();
+            var hrs = (date.getHours() > 9)?'0'+date.getHours() % 12:'0'+date.getHours();
+            var mns = (date.getMinutes() > 9)?date.getMinutes():'0'+date.getMinutes();
+            var scs = (date.getSeconds() > 9)?date.getSeconds():'0'+date.getSeconds();
+            document.getElementById('hours').innerHTML = hrs+':'
+            document.getElementById('mins').innerHTML = mns+':';
+            document.getElementById('sec').innerHTML = scs;
+
+            if(date.getHours() > 12){
+                document.getElementById('ap').innerHTML = 'PM';
+            }else{
+                console.log(hours.value);
+                document.getElementById('ap').innerHTML = 'AM';
+            }
+
+            var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'] ;
+            var day = date.getDay();
+            
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var month = date.getMonth();
+
+            for(var i = 0 ; i <= month ; i++){
+                for(var j = 0 ; j <= day ; j++){
+                    document.getElementById('day').innerHTML = `${days[j]}, ${months[i]} ${date.getDate()}, ${date.getFullYear()}`;
+                }
+            }
+        }, 1000);
+        
+
+        
+
+    </script>
+</body>
+</html>

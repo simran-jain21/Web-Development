@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .class3{
+        background-color : blue;
+        color : white;
+    }
+    .rbox{
+        width:300px;
+        height:100px;
+        border:1px solid black;
+    }
+</style>
+<body>
+
+    <div class = "content class1 class3" id = "box" title="myclass">
+     <p>
+         this is javascript
+     </p>
+    </div>
+
+    <div class = "content class1 class2" id = "box1">
+
+    </div>
+
+    <input type="text" id="input" disabled>
+    <button id="btn">
+        enable input
+    </button>
+
+    <div class="rbox" id="rbox">
+        this is colourful box
+    </div>
+
+    <img src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="box-img" height='200px' width='400px' alt="image" >
+
+            <script>
+                var box = document.getElementById('box');
+                console.log(box.className);
+                console.log(box.className.split(' '));
+                console.log(box.classList);
+                console.log(box.classList.value.split(' '));
+
+
+                console.log(box.getAttribute('title'));
+                box.setAttribute('title', 'this is title');
+
+                var box1 = document.getElementById('box1');
+                console.log(box1.getAttribute('id'));
+                box1.setAttribute('title','i dont like title');
+
+                console.log(box1.hasAttribute('title'));
+
+
+                var btn = document.getElementById('btn');
+                btn.addEventListener('click',function(){
+                    var input = document.getElementById('input');
+                    input.removeAttribute('disabled');
+                    console.log(input);
+                    clearTimeout(time);
+                    clearInterval(interval);
+                    box.classList.toggle('class3');
+                })
+
+                console.log(1);
+                var time = setTimeout(function(){
+                    console.log(2)
+                },5000);
+                console.log(3);
+
+                var interval = setInterval(function() {
+                        console.log('hello')
+                    }, 2000);
+                    
+
+                function randomvalue(){
+                    return Math.random()*255;
+                }
+                    var rbox = document.getElementById('rbox');
+                    rbox.addEventListener('mouseover',function(){
+                        var r = randomvalue();
+                        var g = randomvalue();
+                        var b = randomvalue()
+                        // rbox.style.backgroundColor = 'rgb('+Math.random()*255+','+Math.random()*255+','+Math.random()*255+')';
+                        rbox.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+                        console.log('rbox');
+                    })
+                
+                    var image = document.getElementById('box-img');
+                    image.addEventListener('mouseover',function(){
+                        image.src = 'https://picsum.photos/200/300';
+                    })
+
+                    
+            </script>
+</body>
+
+</html>

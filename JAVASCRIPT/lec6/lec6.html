@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec 6 </title>
+</head>
+<body>
+    <script>
+        // MATH
+
+        console.log('Math.E = ',Math.E);
+        console.log('Math.pi = ',Math.PI);
+        console.log('Math.sqrt2 = ',Math.SQRT2);
+        console.log('Math.sqrt1_2 = ',Math.SQRT1_2);
+        console.log('Math.ln2 = ',Math.LN2);
+        console.log('Math.ln10 = ',Math.LN10);
+        console.log('Math.log2e = ',Math.LOG2E);
+        console.log('Math.log10e = ',Math.LOG10E);
+
+        //math methods
+        //round()
+        console.log('round = ',Math.round(4.3));
+
+        //pow(x,y)
+        console.log('pow = ',Math.pow(2,4));
+
+        //sqrt()
+        console.log('sqrt = ',Math.sqrt(25));
+        console.log(Math.sqrt(-9));
+
+        //abs(X)
+        console.log('abs = ',Math.abs(-3.4));
+        console.log(Math.abs('hello'));
+        console.log(Math.abs(null));
+
+        //ceil()
+        console.log('ceil = ',Math.ceil(2.00));
+        console.log(Math.ceil(2.5));
+
+        //floor()
+        console.log('floor = ',Math.floor(2.99));
+        console.log(Math.floor(2.4));
+
+        //min(x1,x2,...xn)
+        console.log('min = ',Math.min(2.99, 6 ,1 ,-21, 0));
+
+        //max(x1,x2,...xn)
+        console.log('max = ',Math.max(2.99, 6 ,1 ,-21, 0));
+        
+        //random()
+        console.log('random = ', Math.random())         //if not given inside brackets, will give any value between
+        console.log(Math.floor(Math.random() * 10));
+        console.log(Math.floor(Math.random() * 100));
+        console.log(Math.floor(Math.random() * 999));
+
+        //trunc()
+        console.log('trun = ',Math.trunc(3.5));
+
+        //sign()
+        console.log('sign = ',Math.sign(-3.5));
+        console.log(Math.sign(3.5));
+        
+        //sin
+        console.log(Math.sin(90));
+
+        //cos
+        console.log(Math.cos(0));
+
+        //date
+        var a = new Date();
+        console.log(a);
+
+        var a = new Date(86400000);
+        console.log(a);
+
+        var a = new Date("october 12, 2021 12:30:44");
+        console.log(a);
+
+        var a = new Date(2022,11,13,12,22,55,234);
+        console.log(a);
+
+        console.log('---------------------------------------------');
+
+        var days = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat']
+        var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        var a =new Date();
+        console.log(month[a.getMonth()]);
+
+        var x = new Date();
+        console.log(days[x.getDay()]);
+
+
+        console.log('---------------------------------------------');
+
+        var a = new Date();
+        console.log(a);         //current date
+        console.log(a.getDay());
+        console.log(a.getDate());
+        console.log(a.getFullYear());
+        console.log(a.getMonth());
+        console.log(a.getHours());
+        console.log(a.getMinutes());
+        console.log(month[a.getMonth()]+' '+a.getDate()+','+a.getFullYear()+' at '+a.getHours()+':'+a.getMinutes()+':'+a.getSeconds()+':'+a.getMilliseconds());
+        console.log(a.getTime());
+        console.log(1647151911306);
+        console.log(a.getTimezoneOffset());
+
+
+        console.log('---------------------------------------------');
+
+        var a = new Date("21 february, 1998");
+        console.log(a); 
+
+
+
+    </script>
+</body>
+</html>

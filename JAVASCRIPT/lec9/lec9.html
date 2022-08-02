@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec 9</title>
+</head>
+<body>
+    <script>
+        
+        //primitive
+        var a = 5;
+        var b = a;
+        a = 6;                      //will change 6 in a only(left side)
+        console.log(a , b);
+
+        // non-primitive -> array,object
+        var x = [1,2,3];            //Will add value to both x and y
+        var y = x;
+        x.push(9);
+        console.log(x , y);
+
+        var obj1 = {
+                    name:'simran',
+                    surname:'jain'
+                    };
+        var obj2 = obj1;
+        obj1.age = 24;
+        console.log(obj1, obj2);
+
+        //apply method & call method
+        // The call() method takes arguments separately.
+        // The apply() method takes arguments as an array.
+    </script>
+    
+</body>
+</html>
