@@ -1,0 +1,513 @@
+body{
+    overflow-x:hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+.pad_bottom120{
+    padding:0 0 120px 0;
+}
+.pad_top120{
+    padding:120px 0 0 0 !important;
+}
+.pad_bottom60{
+    padding:0 0 60px 0 !important;
+}
+.pad_top60{
+    padding:60px 0 0 0;
+}
+.red{
+    color: #f45162;
+}
+.circle_blur{
+    box-shadow: 0 30px 240px 90px #17c0e9;
+    position: absolute;
+    left: 80px;
+}
+
+  /* --------------------------------  MENU  ------------------------------------- */
+.menu_font{
+    font-size:14px;
+}
+.bg_color{
+    background-color: #111215;
+    /* z-index: 999999; */
+}
+.burger{
+    display:none;
+}
+/*------------------------------------ Hero section ------------------------------ */
+.h1_fs{
+    font-size:80px;
+    margin-bottom:30px;
+}
+.p_color{
+    color: #9b9b9b;
+    font-size: 20px;
+ }
+.header-img{
+    width:100%;
+    height:auto;
+    padding:0 35px;
+}
+.btn-apple{
+    background-image: linear-gradient(to right, #f45162,#c96ddd,#17c0e9);
+    padding: 16px 55px;
+    border-radius: 40px;
+    font-size:18px
+}
+.btn-apple:hover{
+    background-image:linear-gradient( #f45162, #f45162, #f45162);
+}
+.hero-btns button{
+    border: 0;
+    width: 14em;
+    color: #fff;
+    border-radius: 28px;
+    text-align: center;
+    font-weight: 600;
+    padding: 12px 0;
+    margin-bottom: 1em;
+    border:1px solid transparent;
+
+}
+.hero-btns button:first-child{
+    background-image: linear-gradient(to right, #f45162,#c96ddd,#17c0e9);
+}
+.hero-btns button:last-child{
+    background:transparent;
+    border-color: #fff;
+
+}
+
+.btn-play{
+    border:1px solid #ffffff;   
+    padding: 16px 55px;
+    border-radius: 40px;
+    font-size:16px;
+}
+.clickable a{
+    /* width: 49%;
+    margin: 1px; */
+}
+/*------------------------ GLOBAL PARTNERS ------------------------*/
+.gp_bg_color{
+   background-color: #1e1f21;
+}
+.gp_h1{
+    font-size:42px;
+}
+.gp_img{
+    position: absolute;
+    top: -6px;
+    left: -12px;
+}
+.b-front{
+    position: relative;
+}
+
+.gp_grey{
+    height:70px;
+    width:auto;
+    /* color:#111215; */
+    opacity: 0.5;
+}
+.gp_white{
+    visibility: hidden;
+    height:70px;
+    width:auto;
+    color:#ffffff;
+    opacity:1;
+}
+/* a.gp_brands:hover */
+.gp_grey:hover .gp_white{
+    animation: move .3s;
+}
+
+@keyframes move {
+    from{bottom : 100px; opacity:1;}
+    to{bottom: 0px;}
+}
+
+ /*------------------------------ CUSTOMIZE APPLICATIONS------------------------------ */
+
+h3.bull{
+   color: #f45162;
+}
+h3.bull::before{
+    content: '\f111';
+    color: #f45162;
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+}
+
+.ca_space{
+    padding-left:35px;
+}
+.ca_space1{
+    padding-left: 25px;
+}
+.ca_space1::before{
+    left: 5px !important;
+}
+.ca_space::before,
+.ca_space1::before{
+    content: ' ';
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 7px;
+    left: 17px;
+}
+.ca_fs{
+    font-size:50px;
+}
+.read{
+    padding-left: 20px;
+    font-size: 18px;
+}
+ul li.listing::before{
+    content: ' ';
+    background-color: #f45162;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 7px;
+    left: 17px;
+}
+.btn-apple1{
+    border:1px solid #f45162;
+    padding: 16px 55px;
+    border-radius: 40px;
+    font-size:18px
+}
+.circle_blur1{
+    box-shadow: -251px 70px 500px 50px #f45162;
+    /* position: absolute; */
+    left: 80px;
+    height: 0;
+}
+.circle_blur2{
+    box-shadow: 209px 496px 500px 50px #f45162;
+    /* position: absolute; */
+    left: 80px;
+    height: 0;
+}
+
+/*-------------------------------------------- APPLICATION FEATURES -------------------------------------------------- */
+
+.bg_apps{
+ background-color: #111215;
+}
+h3.bull1{
+    color: #f45162;
+    position: relative;
+    display:inline-block
+ }
+
+ /* h3.bull1 span::after{
+    content: '\f111';
+    color: #f45162;
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    position: absolute;
+    top: 4px;
+    left: -25px;   */
+    /* content: '';
+    position: absolute;
+    top: 6px;
+    left: -25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #f45162;
+    z-index: -1; */
+ /* }  */
+
+ /* h3.bull1 span{
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    z-index:99;
+ } */
+
+ /* span.ca_space_left{
+    margin-right: 15px;
+ }
+
+ span.ca_space_right{
+    margin-left: 15px;
+ } */
+
+
+ h3.bull1::before{
+     content: '\f111';
+     color: #f45162;
+     font-family: 'FontAwesome';
+     font-size: 20px;
+     position: absolute;
+     top:2px;
+     right:-23px;
+ }
+ h3.bull1::after{
+    content: '\f111';
+    color: #f45162;
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    position: absolute;
+    top: 3px;
+    left: -25px;
+}
+
+h3.bull1 span.ca_space_left{
+    position: absolute;
+    top: 10px;
+    left: -21px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    z-index: 99;
+ }
+
+ h3.bull1 span.ca_space_right{
+    position: absolute;
+    top: 10px;
+    right: -28px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    z-index: 99;
+ }
+
+/*
+ .ca_space1{
+     padding-left:35px;
+ } */
+  /* .ca_space1::before{
+     content: ' ';
+     border: 1px solid #ffffff;
+     color: #ffffff;
+     font-size: 20px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     border-radius: 50%;
+     top:9px;
+     left: 410px;
+     z-index: 1;
+ } */
+
+
+ /* .ca_space1::after{
+    content: ' ';
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 9px;
+    right:383px;
+    z-index: 1;
+} */
+
+
+.p_color1{
+    color: #9b9b9b;
+    font-size: 17px;
+ }
+.af_card_bg{
+    background-color: #252527;
+}
+.af_card_bg:hover{
+    border-image: linear-gradient(to right, #f45162,#c96ddd,#17c0e9) 1;
+    transition: all 4s;
+}
+.ca_fs1{
+    font-size:48px;
+}
+
+h6.bull{
+    color: #f45162;
+  }
+
+.wp_card_bg{
+    background-color: #111215;
+    border: 1px solid #252527;
+    border-radius: 5px;
+}
+.wp_card_bg:hover{
+    border: 1px solid ;
+    border-image: linear-gradient(to right, #f45162,#c96ddd,#17c0e9)1;
+    transition: all 4s;
+}
+
+
+/* -----------------------------------------------------video------------------------------------------------------ */
+
+.bg_img{
+    background-image: url('./images/bg-vid.jpg');
+    height: 550px;
+    width: auto;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.play_button{
+    /* position: absolute; */
+    /* top: 200px;
+    left: 530px; */
+    font-size: 30px;
+    color: #f45162;
+    background-color: #ffffff;
+    border-radius:50%;
+    height: 90px;
+    width: 90px;
+    display: grid !important;
+    place-items: center;
+
+}
+
+/* ----------------------------------------------------------MEET OUR TEAM---------------------------------- */
+
+.bg_video{
+    background-image: linear-gradient(#121319 50%, #1e1f21 50%);
+}
+.bg_meet{
+    background-color: #1e1f21;
+}
+.m_img{
+    height:200px;
+    width:200px;
+}
+.expert_img{
+    border-radius:50%;
+    position: relative;
+    z-index:5;
+}
+.bg_expert_img::after{
+    content: '';
+    background-image: linear-gradient(#f45162,#f45162,#f45162);
+    position: absolute;
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 12px;
+    right: 43px;
+    z-index: -5;
+}
+.bg_expert_img::before{
+    content: '';
+    border:1px solid #ffffff;
+    position: absolute;
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    top: -14px;
+    left: 40px;
+    z-index: -5;
+    opacity: 0.2;
+}
+
+.expert_img:hover .bg_expert_img::after{
+    position: absolute;
+    background-image: linear-gradient(to right, #f45162,#c96ddd,#17c0e9);
+} 
+
+
+/* --------------------------------pricing packages------------------------------------------ */
+
+.bg_price{
+    background-color: #111215;
+}
+
+h1.price{
+    font-size:100px;
+    position: relative;
+    display:inline-block;
+}
+.free_package{
+    border:1px solid #1b1b1b;
+    padding:20px 90px;
+}
+.price_button_free{
+    background-color: #252527;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 70px;
+    display:block;
+    font-size: 18px;
+}
+.package_features{
+    color:#9b9b9b;
+    font-size:18px
+}
+.premium_package{
+    background-color: #252527;
+    padding:20px 90px;
+}
+
+.price_button_premium{
+  background-image: linear-gradient(to right, #f45162,#c96ddd,#17c0e9);   
+  border-radius: 50px;
+  border: none;
+  padding: 20px 70px;
+  display:block;
+  font-size: 18px;
+}
+.price_button_free:hover,
+.price_button_premium:hover{
+    background-color:#f45162;
+    background-image: linear-gradient(#f45162,#f45162,#f45162);
+}
+.dollar{
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: -15px;
+}
+.color_opa{
+    opacity:0.3;
+}
+
+
+@media screen and (max-width: 768px) {
+    .burger{
+        display:inline-block !important;
+    }
+    .brand_row2{
+        display:none;
+    }
+    .brand_row1{
+        padding-bottom:100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn-apple {
+      margin-top: 15px;
+      min-width:200px;
+    }
+    .clickable a{
+    display: block;
+    margin: 10px;
+    }
+    .hero-btns button{
+        width: 100%;
+    }
+  }

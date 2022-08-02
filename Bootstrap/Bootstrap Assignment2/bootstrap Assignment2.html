@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Assignment 2</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./bootstrap Assignment2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg bg_color py-3" id="mynav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo-gr.png" alt="Vie" width="50px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars text-white burger"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav menu_font text-md-center text-sm-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle px-4 py-2"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Main Home</a></li>
+                <li><a class="dropdown-item" href="#">Creative Agency</a></li>
+                <li><a class="dropdown-item" href="#">Digital Agency</a></li>
+                <li><a class="dropdown-item" href="#">Business One Page</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Corporate Business</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Modern Agency</a></li>
+                <li><a class="dropdown-item" href="#">Free Lancer</a></li>
+                <li><a class="dropdown-item" href="#">Architecture</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-4 py-2"
+                aria-current="page"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-2" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-2" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-2" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4 py-2" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="bg_color" id="off_val">
+      <div class="container">
+        <div class="row text-white pt-5 pb-5">
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-lg-start text-md-center text-center pt-5"
+          >
+            <h1 class="h1_fs">Let’s Build Amazing Mobile Apps Together</h1>
+            <p class="p_color mt-5">
+              Sit amet consectetur adipiscing elit, sed do eiusmod tempor idunte
+              ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+              gravida. Risus commodo viverra maecenas accumsan
+            </p>
+            <!-- <div class="mt-5 mb-5 clickable ">
+                        <a href="#" class="btn-apple text-white text-decoration-none d-sm-block d-md-inline mb-3">Apple Store <i class="fa-brands fa-apple fs-4 ps-2"></i></a>
+                        <a href="#" class="btn-play text-white text-decoration-none d-sm-block d-md-inline">Google Play <i class="fa-brands fa-google-play fs-5 ps-2"></i></a>
+                    </div> -->
+            <div class="hero-btns my-5">
+              <button>
+                Apple Store <i class="fa-brands fa-apple fs-4 ps-2"></i>
+              </button>
+              <button>
+                Google Play <i class="fa-brands fa-google-play fs-5 ps-2"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="./images/header-img.png" alt="" class="header-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GLOBAL PARTNERS -->
+    <div class="gp_bg_color">
+      <div class="circle_blur"></div>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-lg-12 text-center text-white pt-5">
+            <h1 class="gp_h1 position-relative">
+              We’ve
+              <span class="position-relative">
+                154+
+                <img src="./images/border.png" alt="border-img" class="gp_img"
+              /></span>
+              Global Partners
+            </h1>
+            <h5>Professional Design Agency to provide solutions</h5>
+          </div>
+        </div>
+        <div class="row mt-5 pt-3 text-center brand_row1">
+          <div class="col-lg col-md-3 col-sm-12 position-relative">
+            <a href="#0" class="gp_brands">
+              <img
+                src="./images/l1.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l1.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg col-md-3 col-sm-12 position-relative">
+            <a href="#0">
+              <img
+                src="./images/l2.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l2.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg col-md-3 col-sm-12 position-relative">
+            <a href="#0">
+              <img
+                src="./images/l3.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l3.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg col-md-3 col-sm-12 position-relative">
+            <a href="#0">
+              <img
+                src="./images/l4.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l4.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg position-relative brand_row2">
+            <a href="#0">
+              <img
+                src="./images/l5.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l5.png" alt="" class="gp_white" />
+            </a>
+          </div>
+        </div>
+        <div class="row mt-5 pt-3 pb-5 text-center brand_row2">
+          <div class="col-lg position-relative">
+            <a href="#0">
+              <img
+                src="./images/l5.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l5.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg position-relative">
+            <a href="#0">
+              <img
+                src="./images/l4.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l4.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg position-relative">
+            <a href="#0">
+              <img
+                src="./images/l3.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l3.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg position-relative">
+            <a href="#0">
+              <img
+                src="./images/l2.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l2.png" alt="" class="gp_white" />
+            </a>
+          </div>
+          <div class="col-lg position-relative">
+            <a href="#0">
+              <img
+                src="./images/l1.png"
+                alt=""
+                class="gp_grey position-absolute"
+              />
+            </a>
+            <a href="#0">
+              <img src="./images/l1.png" alt="" class="gp_white" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUSTOMIZE APPLICATIONS -->
+    <div class="bg-black">
+      <div class="container pad_top120">
+        <div class="row pad_bottom60">
+          <div
+            class="col-lg col-md-12 col-sm-12 text-xl-start text-lg-start text-md-center text-sm-center"
+          >
+            <!-- <div class="circle_blur1"> -->
+            <img src="./images/s1.png" alt="" class="pb-5" height="615px" />
+            <!-- </div> -->
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+            <h3 class="bull">
+              <span class="ca_space1">Customize Application </span>
+            </h3>
+            <h1 class="text-white pt-3 mb-5 ca_fs">
+              We Tackle Your Most Ambitious Goals
+            </h1>
+            <p class="p_color">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accus antium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae abillo inventore veritatis et quasi architecto beatae vitae
+              dicta ecabo. Nemo enim ipsam voluptatem quia voluptas aspernatur
+              Get Free 7 Days Trial Read More
+            </p>
+            <div class="mt-5 mb-5">
+              <a
+                href="#0"
+                class="btn-apple text-white text-decoration-none fw-bold"
+                >Get Free 7 Days Trial
+                <i class="fa-brands fa-apple fs-5 ps-2"></i
+              ></a>
+              <a href="#0" class="text-white read">Read More ></a>
+            </div>
+            <ul class="text-white fs-6 position-relative lh-lg ps-0">
+              <li class="list-unstyled mb-3">
+                <i class="fa-solid fa-check bg-danger p-1 rounded-5 me-4"></i
+                >Unique Design & Development
+              </li>
+              <li class="list-unstyled mb-3">
+                <i class="fa-solid fa-check bg-danger p-1 rounded-5 me-4"></i
+                >Experience Team Members
+              </li>
+              <li class="list-unstyled mb-3">
+                <i class="fa-solid fa-check bg-danger p-1 rounded-5 me-4"></i
+                >Powerfull Applications
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row pad_bottom120">
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <h3 class="bull"><span class="ca_space1">Core Features</span></h3>
+              <h1 class="text-white pt-3 mb-5 ca_fs">
+                Links, Content & Community. One Online Homepages. Save and
+                Organise Ideas
+              </h1>
+              <p class="p_color">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accus antium doloremque laudantium, totam rem aperiam, eaque
+                ipsa quae abillo inventore veritatis et quasi architecto beatae
+                vitae dicta ecabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos
+              </p>
+              <div class="mt-5 mb-5">
+                <a
+                  href="#0"
+                  class="btn-apple1 text-white text-decoration-none fw-bold"
+                  >Get Free 7 Days Trial
+                  <i class="fa-brands fa-apple fs-5 ps-2"></i
+                ></a>
+                <a href="#0" class="text-white read">Read More ></a>
+              </div>
+            </div>
+            <div
+              class="col-lg col-md-12 col-sm-12 position-relative text-xl-start text-lg-start text-md-center text-sm-center offset-xl-1 offset-lg-0"
+            >
+              <!-- <div class="circle_blur2"> -->
+              <img src="./images/s2.png" alt="" class="pb-5" height="615px" />
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPLICATION FEATURES -->
+    <div class="gp_bg_color">
+      <div class="container">
+        <div class="row text-center pad_top120">
+          <div class="col-lg col-md-12 col-sm-12">
+            <div class="text-center">
+              <h3 class="bull1 d-inline-block">
+                <span class="ca_space_left"></span>Application Features<span
+                  class="ca_space_right"
+                ></span>
+              </h3>
+              <!-- <h3 class="bull position-relative"><span class="ca_space"></span></h3>  -->
+              <h1 class="text-white pt-3 mb-5 ca_fs w-50 mx-auto">
+                Amazing Features to Customize your Application Easy
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row pad_bottom120">
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-4 af_card_bg">
+              <div class="card-body">
+                <div class="fa_car_title d-flex pb-4">
+                  <i class="fa-solid fa-bezier-curve text-danger pe-3 fs-2"></i>
+                  <h4 class="card-title text-white">Modern Design</h4>
+                </div>
+                <p class="card-text p_color1">
+                  unde omniste natus error sit voluptatem accus antium dolore
+                  mque laudant totam rem aperiam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-4 af_card_bg">
+              <div class="card-body">
+                <div class="fa_car_title d-flex pb-4">
+                  <i class="fa-solid fa-rocket text-danger pe-3 fs-2"></i>
+                  <h4 class="card-title text-white">Fast Installation</h4>
+                </div>
+                <p class="card-text p_color1">
+                  unde omniste natus error sit voluptatem accus antium dolore
+                  mque laudant totam rem aperiam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-4 af_card_bg">
+              <div class="card-body">
+                <div class="fa_car_title d-flex pb-4">
+                  <i class="fa-solid fa-chart-column text-danger pe-3 fs-2"></i>
+                  <h4 class="card-title text-white">Digital Analytics</h4>
+                </div>
+                <p class="card-text p_color1">
+                  Wunde omniste natus error sit voluptatem accus antium dolore
+                  mque laudant totam rem aperiam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-4 af_card_bg">
+              <div class="card-body">
+                <div class="fa_car_title d-flex pb-4">
+                  <i class="fa-solid fa-anchor text-danger pe-3 fs-2"></i>
+                  <h4 class="card-title text-white">SEO Friednly</h4>
+                </div>
+                <p class="card-text p_color1">
+                  unde omniste natus error sit voluptatem accus antium dolore
+                  mque laudant totam rem aperiam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-4 af_card_bg">
+              <div class="card-body">
+                <div class="fa_car_title d-flex pb-4">
+                  <i
+                    class="fa-solid fa-mobile-screen text-danger pe-3 fs-2"
+                  ></i>
+                  <h4 class="card-title text-white">Clean Coding</h4>
+                </div>
+                <p class="card-text p_color1">
+                  unde omniste natus error sit voluptatem accus antium dolore
+                  mque laudant totam rem aperiam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-4 af_card_bg">
+              <div class="card-body">
+                <div class="fa_car_title d-flex pb-4">
+                  <i class="fa-solid fa-lock text-danger pe-3 fs-2"></i>
+                  <h4 class="card-title text-white">High Security</h4>
+                </div>
+                <p class="card-text p_color1">
+                  Wunde omniste natus error sit voluptatem accus antium dolore
+                  mque laudant totam rem aperiam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPS SCREENSHOT -->
+    <div class="bg_apps">
+      <div class="container">
+        <div class="row text-center pad_top120">
+          <div class="col-lg col-md-12 col-sm-12">
+            <div class="position-relative text-center">
+              <h3 class="bull1 ps-0">
+                <span class="ca_space_left"></span>App Screenshot
+                <span class="ca_space_right"></span>
+              </h3>
+              <!-- <h3 class="bull position-relative"><span class="ca_space"></span></h3>  -->
+              <h1 class="text-white pt-3 mb-5 ca_fs1 w-50 mx-auto">
+                Amazing Designer Create Our Application Let’s See
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row pad_bottom60 text-center justify-content-center">
+          <div class="col-lg-2 col-md-6 col-sm-12 pb-4 me-4">
+            <img src="./images/1.png" alt="" height="390px" />
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 pb-4 me-4">
+            <img src="./images/2.png" alt="" height="390px" />
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 pb-4 me-4">
+            <img src="./images/3.png" alt="" height="390px" />
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 pb-4 me-4">
+            <img src="./images/4.png" alt="" height="390px" />
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 pb-4 me-4">
+            <img src="./images/5.png" alt="" height="390px" />
+          </div>
+        </div>
+
+        <div class="row text-center pad_top60">
+          <div class="col-lg col-md-12 col-sm-12">
+            <div class="position-relative text-center">
+              <h3 class="bull1 ps-0">
+                <span class="ca_space_left"></span>Working Process<span
+                  class="ca_space_right"
+                ></span>
+              </h3>
+              <h1 class="text-white pt-3 mb-5 ca_fs1">
+                3 Step to Complete Projects
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row pad_bottom60">
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-3 wp_card_bg text-center">
+              <div class="card-body">
+                <i class="fa-solid fa-cloud-arrow-down fs-1 red"></i>
+                <h4 class="card-title text-white py-4">Download Apps</h4>
+                <h6 class="bull pb-4">STEP 01</h6>
+                <p class="card-text p_color1">
+                  Sorem ipsum dolor sit amet consectetur adipiscing elit seddo
+                  eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-3 wp_card_bg text-center">
+              <div class="card-body">
+                <i class="fa-solid fa-user red fs-1"></i>
+                <h4 class="card-title text-white py-4">Create Account</h4>
+                <h6 class="bull pb-4">STEP 02</h6>
+                <p class="card-text p_color1">
+                  Sorem ipsum dolor sit amet consectetur adipiscing elit seddo
+                  eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+            <div class="card p-3 wp_card_bg text-center">
+              <div class="card-body">
+                <i class="fa-solid fa-mobile-screen pe-3 fs-1 red"></i>
+                <h4 class="card-title text-white py-4">Got Results</h4>
+                <h6 class="bull pb-4">STEP 03</h6>
+                <p class="card-text p_color1">
+                  Sorem ipsum dolor sit amet consectetur adipiscing elit seddo
+                  eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--VIDEO  -->
+    <div class="bg_video pad_top60 pad_bottom60">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="bg_img">
+              <a href="#0" class="position-absolute text-decoration-none">
+                <i class="fa-solid fa-play play_button"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- PAGINATION -->
+      <!-- <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item ">
+      <li class="page-item "><a class="page-link border-primary rounded me-1 p-1" href="#"></a></li>
+      <li class="page-item"><a class="page-link border-primary rounded me-1 p-1" href="#"></a></li>
+      <li class="page-item"><a class="page-link border-primary rounded me-1 p-1" href="#"></a></li>
+      
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+
+    <!--MEET OUR TEAM  -->
+    <div class="bg_meet pad_bottom120">
+      <div class="container">
+        <div class="row text-center pad_top120">
+          <div class="col-lg col-md-12 col-sm-12">
+            <div class="position-relative text-center">
+              <h3 class="bull1 ps-0">
+                <span class="ca_space_left"></span>Meet Our Team
+                <span class="ca_space_right"></span>
+              </h3>
+              <h1 class="text-white pt-3 mb-5 ca_fs1 w-50 mx-auto">
+                We've Experience Team Member to Provide Solutions
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center pad_top60">
+          <div class="col-lg-3 col-md-6">
+            <div class="expert_img text-center">
+              <div class="bg_expert_img">
+                <!-- <span class="white_circle"> -->
+                <img src="./images/M1.png" alt="" class="m_img" />
+                <!-- </span> -->
+              </div>
+            </div>
+            <h4 class="text-white mt-5">Eddie E. Moseley</h4>
+            <p class="p_color">CEO & Founder</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="expert_img text-center">
+              <div class="bg_expert_img">
+                <img src="./images/M2.png" alt="" class="m_img" />
+              </div>
+            </div>
+            <h4 class="text-white mt-5">John J. Schreffler</h4>
+            <p class="p_color">Apps Designer</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="expert_img text-center">
+              <div class="bg_expert_img">
+                <img src="./images/M3.png" alt="" class="m_img" />
+              </div>
+            </div>
+            <h4 class="text-white mt-5">Venessa M. Meister</h4>
+            <p class="p_color">Web Developerr</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="expert_img text-center">
+              <div class="bg_expert_img">
+                <img src="./images/M4.png" alt="" class="m_img" />
+              </div>
+            </div>
+            <h4 class="text-white mt-5">Joel R. Funkhouser</h4>
+            <p class="p_color">CSenior Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING PACKAGES -->
+    <div class="bg_price">
+      <div class="container">
+        <div class="row text-center pad_top120">
+          <div class="col-lg col-md-12 col-sm-12">
+            <div class="position-relative text-center">
+              <h3 class="bull1 ps-0">
+                <span class="ca_space_left"></span>Pricing Package<span
+                  class="ca_space_right"
+                ></span>
+              </h3>
+              <h1 class="text-white pt-3 mb-5 ca_fs1">
+                Popular Pricing Package for Design Mobile Application
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center pad_bottom120">
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="free_package pt-5 pb-4">
+                  <div class="package pb-5 text-center">
+                    <h4 class="text-white">Free Package</h4>
+                    <h1 class="price red pb-3">
+                      <span class="text-white dollar">$</span>0
+                    </h1>
+                    <a href="" class="text-decoration-none text-white price_button_free">Get Free 7 Days Trail</a>
+                  </div>
+                  <div class="package_features">
+                    <ul class="position-relative lh-lg p-0">
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Unique Design & Development
+                      </li>
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Clean Code & Easy Editable
+                      </li>
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Modern UI Design
+                      </li>
+                      <li class="list-unstyled mb-3  color_opa">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>350 GB Hosting Free
+                      </li>
+                      <li class="list-unstyled mb-3  color_opa">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>24/7 Hour Support
+                      </li>
+                      <li class="list-unstyled mb-3  color_opa">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Upoad Modern Design
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="premium_package pt-5 pb-4">
+                  <div class="package pb-5 text-center">
+                    <h4 class="text-white">Premium Package</h4>
+                    <h1 class="price red pb-3">
+                      <span class="text-white dollar">$</span>59</h1>
+                    <a href="" class="text-decoration-none text-white price_button_premium">Choose Package</a>
+                  </div>
+                  <div class="package_features">
+                    <ul class="position-relative lh-lg p-0">
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Unique Design & Development
+                      </li>
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Clean Code & Easy Editable
+                      </li>
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Modern UI Design
+                      </li>
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>350 GB Hosting Free
+                      </li>
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>24/7 Hour Support
+                      </li>
+                      <li class="list-unstyled mb-3">
+                        <i class="fa-solid fa-check text-white bg-danger p-1 rounded-5 me-4"></i>Upload Modern Design
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var choose = document.getElementById("off_val");
+      console.log(choose.offsetTop);
+
+      var menu = document.getElementById("mynav");
+      document.addEventListener("scroll", animScroll);
+
+      function animScroll() {
+        if (
+          document.body.scrollTop > 74 ||
+          document.documentElement.scrollTop > choose.offsetTop
+        ) {
+          menu.style.position = "sticky";
+          menu.style.top = 0;
+          menu.style.transitionDuration = ".3s";
+        } else {
+          menu.style.position = "auto";
+        }
+      }
+    </script>
+  </body>
+</html>
