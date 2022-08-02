@@ -1,0 +1,45 @@
+body{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	box-sizing:box-border;
+}
+a:link{
+	color:blue;
+}
+a:visited{
+	color:green;
+}
+a:hover{
+	color:#ff00f7;
+}
+a:active{
+	color:black;
+}
+/* input:focus{ */
+	/* background-color:yellow; */
+	/* color:blue; */
+	/* border:5px solid pink; */
+/* } */
+input:disabled{
+	background-color:green;
+}
+table{
+	border-collapse:collapse;
+	
+}
+table tbody tr:nth-child(odd){
+	background-color:red;
+}
+table tbody tr:nth-child(even){
+	background-color:blue;
+}
+.list ul li:first-child,
+.list ul li:last-child{
+	color:red;
+}
+.list ul li:nth-child(4),.list ul li:nth-child(6){
+	color:blue;
+}
+	

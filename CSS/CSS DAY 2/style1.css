@@ -1,0 +1,61 @@
+body{
+	background-color:white;
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+}
+.border{
+	border:1px solid black;
+	height:750px;
+	width:850px;
+	background-color:#F5CCF1;
+	padding:30px;
+}
+p.p1{
+	height: 100px;
+	width:800px;
+	text-align:justify;
+	border: 3px solid blue;
+	border-radius:15px;
+	margin-left:20px;
+}
+p.p2{
+	height: 150px;
+	width: 500px;
+	/*border: 10px 20px 30px 40px;*/
+	border-color:red;
+	border-style:dotted;  
+	text-align:center;
+	padding:50px;
+	margin:50px;
+	font-size:20px;
+	
+}
+p.p3{
+	height:auto;
+	width: 500px;
+	border: 2px dashed green;
+	padding:10px;
+}
+button.FIT{
+	border:2px solid black;
+	border-radius:50px;
+	background-color:blue;
+	height:50px;
+	width:50px;
+	color:white;
+}
+button.read{
+	border:3px solid black;
+	border-radius: 40px;
+	background-color:yellow;
+}
+button.box{
+	height:50px;
+	width:100px;
+	border: 2px solid black;
+	border-top-left-radius:60px;
+	border-top-right-radius:30px;
+	background-color:yellow;
+}

@@ -1,0 +1,13 @@
+.bg-color{
+    height:500px;
+    width:1000px;
+    background-image: linear-gradient(green,yellow);
+    /* background-image: linear-gradient(to right,green,yellow); */
+    /* background-image: linear-gradient(to right,green 20%,yellow 40%); */
+    /* background-image: radial-gradient(green,yellow); */
+    /* background-image: conic-gradient(red,blue,yellow); */
+}
+.card{
+    height:100px;
+    width:200px;
+}

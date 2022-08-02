@@ -1,0 +1,58 @@
+body{
+    height:100%;
+    width:400px;
+    margin:10px;
+    padding:0;
+    box-sizing:border-box
+}
+p.lorem{
+    outline-width:5px;
+    outline-style:dashed; 
+    padding:10px;
+    margin:30px;
+    box-shadow:5px 10px 5px 10px green;
+}
+p.lorem::selection{
+    background-color: seagreen;
+}
+p.lorem::first-line{
+    color:blue;
+}
+input::placeholder{
+    color:#000000;
+}
+/* input:placeholder-shown{
+    background-color:blue;
+} */
+div.content{
+    background-color:skyblue;
+    position: relative;
+    margin:30px;
+}
+div.content p::after{
+    content: '';                                            /*just shows that an element is created*/
+    height:0;
+    width:0;
+    border-top: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid skyblue;
+    display: block;
+    position: absolute;
+    right: -19px;
+    top: 27px;
+}
+div.content p::before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid red;
+    border-bottom: 20px solid transparent;
+    border-left: 0px solid transparent;
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 26px;
+}
+
