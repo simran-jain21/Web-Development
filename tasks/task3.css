@@ -1,0 +1,13 @@
+body{
+    margin:0;
+    padding:0px;
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+}
+div.main{
+    height:700px;
+    background:linear-gradient(to right, #000000 50% ,transparent 0%) ,url('../assignments/Assignment 7/pictures/group.png');
+    background-position:center center;  
+    background-repeat:no-repeat;
+}

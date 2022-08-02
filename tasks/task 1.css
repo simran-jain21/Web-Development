@@ -1,0 +1,73 @@
+body{
+    background-color: aqua;
+}
+.main-div{
+    height:400px;
+    width:400px;
+    border:4px solid #000000;
+    position:relative;
+}
+.sub-div{
+    border:5px solid red;
+    height:200px;
+    width:200px;
+    position:relative;
+    margin:100px;
+    background-color: blue;
+}
+/* .sub-div::before{
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border-top: 0px solid transparent;
+    border-right: 33px solid transparent;
+    border-bottom: 33px solid red;
+    border-left: 33px solid transparent;
+    top: -34px;
+    left: 67px;
+} */
+.child-div{
+    Margin: -5px;
+    border: 5px solid red;
+    height: 200px;
+    width: 200px;
+    position: relative
+}
+/* .child-div::before{
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border-top: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid blue;
+    border-left: 30px solid transparent;
+    top: -30px;
+    left: 70px;
+} */
+                                                                                                                                              
+.child-div::before{
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border-top: 0px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 35px solid red;
+    border-left: 35px solid transparent;
+    top: -36px;
+    left: 64px;
+}
+.child-div::after{
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border-top: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid blue;
+    border-left: 30px solid transparent;
+    top: -30px;
+    left: 70px;
+}
